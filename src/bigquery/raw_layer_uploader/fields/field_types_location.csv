@@ -1,0 +1,6 @@
+Field,Type,Count
+ip,str,3239628
+country_short,str,3239628
+country,str,3239628
+region,str,3239628
+city,str,3239628

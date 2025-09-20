@@ -1,0 +1,14 @@
+glamira_dbt:
+  outputs:
+    dev:
+      dataset: glamira_staging
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: E:\workspace\glamira_project_gcp_data_pipeline\ngoctan_owner.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: glamira-project-464503
+      threads: 4
+      type: bigquery
+  target: dev

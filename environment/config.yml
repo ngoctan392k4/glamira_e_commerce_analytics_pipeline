@@ -1,0 +1,9 @@
+MONGODB_URL: "mongodb://<user_name>:<password>@<external_IP_of_VM>:<mongodb_port>/"
+BATCH_SIZE: 1000
+POOL_SIZE: 40
+TIMEOUT: 5
+LOGGING:
+  level: INFO
+  log_file: logs/glamira_log.log
+  to_console: true
+CREDENTIAL: ngoctan_owner.json

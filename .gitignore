@@ -1,0 +1,6 @@
+.venv/
+data/
+checkpoint/
+database/IP-COUNTRY-REGION-CITY.BIN
+ngoctan_owner.json
+.vscode/

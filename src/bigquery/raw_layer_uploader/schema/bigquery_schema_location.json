@@ -1,0 +1,27 @@
+[
+  {
+    "name": "ip",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "country_short",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "country",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "region",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "city",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }
+]

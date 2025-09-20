@@ -1,0 +1,2761 @@
+[
+  {
+    "name": "product_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "suffix",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "product_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "sku",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "attribute_set_id",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "attribute_set",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "type_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "min_price",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "max_price",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "gold_weight",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "none_metal_weight",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "fixed_silver_weight",
+    "type": "FLOAT",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "material_design",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "collection",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "collection_id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "product_type",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "product_type_value",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "category",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "category_name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "store_code",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "gender",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "ringsize",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "ringsize_values",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "value",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "title",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "diameter",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "size",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "circumference",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          }
+        ] 
+      },
+      {
+        "name": "is_default",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "average_size",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "value",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "diameter",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "stone",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "option_type_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "option_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "store_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "is_default",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_quality",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "configure_quality",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "stone_group",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "data_stones",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "stone_type",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "stone_name",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "certificate",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "carat",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "total_carat",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "diameter",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "shape",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "quality",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "clarity",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "cut",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "colour",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "origin",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "origin_colour",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "qty",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "stone_quality",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "id",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "price",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "label",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "stone_type",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "stone_name",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "certificate",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "carat",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "total_carat",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "diameter",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "shape",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "quality",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "clarity",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "cut",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "colour",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "origin",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "origin_colour",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "qty",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "value",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "quality_origins",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "id",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "price",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "stone_type",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "stone_name",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "certificate",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "carat",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "FLOAT",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "FLOAT",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "FLOAT",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "total_carat",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "FLOAT",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "FLOAT",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "FLOAT",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "diameter",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "shape",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "quality",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "clarity",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "cut",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "colour",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "origin",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "origin_colour",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
+              {
+                "name": "qty",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                  {
+                    "name": "value",
+                    "type": "INTEGER",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "label",
+                    "type": "INTEGER",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_label",
+                    "type": "INTEGER",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  },
+                  {
+                    "name": "default_option_title",
+                    "type": "STRING",
+                    "mode": "NULLABLE"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "stone_gia",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "id",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "price",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "label",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "stone_type",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "stone_name",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "certificate",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "carat",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "total_carat",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "diameter",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "shape",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "quality",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "clarity",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "cut",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "colour",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "origin",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "origin_colour",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "qty",
+            "type": "RECORD",
+            "mode": "REPEATED",
+            "fields": [
+              {
+                "name": "value",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "label",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_label",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "default_option_title",
+                "type": "STRING",
+                "mode": "NULLABLE"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "alloy",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "option_type_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "option_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "store_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "is_default",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "colour",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "metal",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "colour_label",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "metal_label",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "engraving_font",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "option_type_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "option_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "store_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "is_default",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "select",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "option_type_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "option_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "store_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "is_default",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "custom",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "option_type_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "option_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "store_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "is_default",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "media_image",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "sku_image",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "image_load_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "total_thumbs",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "images",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "position",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "media_type",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "label",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "image_view",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "is_default",
+            "type": "BOOLEAN",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "config",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "is_feature",
+            "type": "BOOLEAN",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "area_view",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "large_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "medium_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "medium_middle_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "small_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "sticky_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "placeholder_alt",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          }
+        ]
+      },
+      {
+        "name": "paths",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "large_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "medium_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "medium_middle_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "small_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "sticky_image_url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          }
+        ]
+      },
+      {
+        "name": "default_position",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "lcpMediaUrl",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "media_video",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "videos",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "id",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "name",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "media_type",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "label",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "file_name",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "url",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "hidden",
+            "type": "BOOLEAN",
+            "mode": "NULLABLE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "color",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "option_type_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "option_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "store_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "is_default",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "colour",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "metal",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "colour_label",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "metal_label",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "chain",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "option_type_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "option_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "store_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "is_default",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "engraving_field",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "option_type_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "option_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "store_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "max_characters",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "max_characters_wrong",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "pin",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "option_type_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "option_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "default_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "store_title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "title",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "price_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "is_default",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      }
+    ]
+  }
+]

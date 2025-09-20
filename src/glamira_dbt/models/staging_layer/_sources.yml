@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: glamira_src
+    database: glamira-project-464503
+    schema: raw_glamira
+    tables:
+      - name: raw_glamira_behaviour
+      - name: raw_ip_location
+      - name: raw_product_data

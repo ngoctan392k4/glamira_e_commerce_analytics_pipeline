@@ -1,0 +1,2353 @@
+country,region,number_of_doc
+United Kingdom,England,211841
+France,Ile-de-France,101433
+Germany,Nordrhein-Westfalen,98056
+Germany,Bayern,62399
+Turkey,Istanbul,53215
+Australia,New South Wales,44459
+Chile,Region Metropolitana de Santiago,42712
+Italy,Lombardia,41788
+Romania,Bucuresti,37502
+-,-,36767
+Sweden,Stockholms Lan,34234
+Germany,Baden-Wurttemberg,33900
+Spain,"Madrid, Comunidad de",33603
+United States,California,32456
+Portugal,Lisboa,31132
+Canada,Ontario,31112
+Germany,Niedersachsen,31003
+Germany,Hessen,30685
+Viet Nam,Ha Noi,28934
+Netherlands,Zuid-Holland,26998
+Australia,Victoria,26603
+Hungary,Budapest,24292
+Spain,Catalunya,24017
+Lithuania,Vilniaus Apskritis,23303
+Spain,Andalucia,22106
+Singapore,Singapore,21673
+United Kingdom,Scotland,20827
+Poland,Mazowieckie,19499
+Bulgaria,Sofia (stolitsa),19435
+South Africa,Gauteng,19276
+Australia,Queensland,18827
+Italy,Lazio,18825
+United States,Texas,18735
+Netherlands,Noord-Holland,18118
+Peru,Lima,17952
+Czech Republic,"Praha, hlavni mesto",17402
+Canada,Quebec,17203
+United States,Washington,16750
+Belgium,Brussels Hoofdstedelijk Gewest,16358
+Mexico,Distrito Federal,16007
+France,Rhone-Alpes,14998
+Ireland,Dublin,14670
+Spain,"Valenciana, Comunidad",14462
+Germany,Rheinland-Pfalz,13656
+Turkey,Ankara,13543
+Viet Nam,Ho Chi Minh,13489
+Hungary,Pest,13445
+Netherlands,Noord-Brabant,13423
+Belgium,Antwerpen,13252
+France,Provence-Alpes-Cote d'Azur,13177
+United States,Florida,13158
+Germany,Berlin,12983
+United States,New York,12599
+Italy,Piemonte,12191
+Italy,Campania,12061
+United States,New Jersey,11956
+Austria,Wien,11933
+Germany,Sachsen,11362
+United Kingdom,Wales,11220
+Italy,Veneto,11034
+Romania,Ilfov,10914
+Germany,Schleswig-Holstein,10905
+Belgium,Vlaams-Brabant,10759
+Mexico,Mexico,10517
+Spain,Pais Vasco,10482
+Slovakia,Bratislavsky kraj,10385
+Croatia,Grad Zagreb,10362
+Sweden,Vastra Gotaland,10269
+Philippines,National Capital Region,10116
+Finland,Uusimaa,10087
+Denmark,Hovedstaden,9971
+Estonia,Harjumaa,9909
+Switzerland,Zurich,9866
+Italy,Emilia-Romagna,9858
+Sweden,Skane Lan,9594
+Turkey,Izmir,9315
+Norway,Oslo,9190
+Belgium,Oost-Vlaanderen,9084
+United States,Illinois,9011
+Argentina,Ciudad Autonoma de Buenos Aires,8976
+Germany,Brandenburg,8950
+Australia,Western Australia,8864
+Hong Kong,Hong Kong (SAR),8847
+Germany,Thuringen,8789
+Italy,Sicilia,8687
+Poland,Slaskie,8635
+Denmark,Midtjylland,8634
+Netherlands,Gelderland,8618
+Serbia,Central Serbia,8567
+Netherlands,Utrecht,8553
+France,Aquitaine,8517
+Chile,Biobio,8177
+Austria,Niederosterreich,8132
+United States,Pennsylvania,8036
+Colombia,Distrito Capital de Bogota,7884
+Canada,British Columbia,7845
+United Arab Emirates,Dubayy,7624
+Argentina,Buenos Aires,7602
+New Zealand,Auckland,7571
+Italy,Puglia,7530
+Spain,Galicia,7509
+United States,North Carolina,7472
+Italy,Toscana,7462
+Mexico,Nuevo Leon,7456
+France,Pays de la Loire,7420
+Belgium,West-Vlaanderen,7354
+Sweden,Orebro Lan,7261
+Poland,Wielkopolskie,7109
+Slovenia,Ljubljana,7018
+United States,Georgia,6995
+South Africa,Western Cape,6971
+Netherlands,Overijssel,6941
+France,Centre,6709
+Poland,Malopolskie,6692
+Australia,South Australia,6686
+France,Midi-Pyrenees,6611
+Poland,Dolnoslaskie,6525
+Latvia,Riga,6488
+France,Nord-Pas-de-Calais,6414
+Belgium,Hainaut,6378
+Germany,Sachsen-Anhalt,6372
+Germany,Hamburg,6286
+Canada,Alberta,6193
+Lithuania,Kauno Apskritis,6187
+Mexico,Veracruz,6178
+Spain,Castilla y Leon,6135
+Belgium,Liege,6098
+France,Languedoc-Roussillon,6091
+United States,Ohio,6078
+Czech Republic,Stredocesky kraj,6074
+Germany,Mecklenburg-Vorpommern,6042
+France,Bretagne,5967
+Belgium,Limburg,5963
+Mexico,Jalisco,5947
+Netherlands,Limburg,5883
+France,Lorraine,5881
+Chile,Coquimbo,5646
+United States,Virginia,5625
+Denmark,Sjelland,5483
+United States,Michigan,5474
+United Kingdom,Northern Ireland,5318
+Chile,Valparaiso,5267
+Czech Republic,Jihomoravsky kraj,5151
+Spain,Castilla-La Mancha,5088
+Turkey,Bursa,5023
+Spain,Canarias,5012
+Norway,Akershus,4977
+Switzerland,Bern,4901
+Denmark,Syddanmark,4880
+France,Alsace,4844
+France,Picardie,4841
+Poland,Pomorskie,4737
+Austria,Oberosterreich,4736
+United States,Arizona,4724
+India,Maharashtra,4703
+Czech Republic,Ustecky kraj,4654
+Portugal,Porto,4635
+Mexico,Morelos,4593
+Guatemala,Guatemala,4537
+Spain,Aragon,4493
+Poland,Lodzkie,4474
+Czech Republic,Moravskoslezsky kraj,4426
+Romania,Cluj,4326
+Malta,Malta,4302
+Poland,Podkarpackie,4221
+Hungary,Hajdu-Bihar,4212
+Romania,Constanta,4186
+Germany,Saarland,4154
+Romania,Timis,4153
+United States,Colorado,4125
+"Moldova, Republic of",Chisinau,4101
+Romania,Iasi,4068
+Ireland,Cork,4052
+Switzerland,Basel-Stadt,4052
+Switzerland,Vaud,4037
+France,Poitou-Charentes,3981
+Hungary,Borsod-Abauj-Zemplen,3970
+Norway,Rogaland,3964
+Colombia,Cundinamarca,3938
+Turkey,Antalya,3921
+Chile,Maule,3761
+Mexico,Puebla,3754
+United States,Massachusetts,3751
+Denmark,Nordjylland,3730
+Italy,Marche,3719
+Romania,Arges,3700
+France,Haute-Normandie,3688
+Colombia,Antioquia,3619
+Spain,Illes Balears,3618
+Chile,Libertador General Bernardo O'Higgins,3551
+Italy,Calabria,3491
+Turkey,Kocaeli,3451
+Austria,Steiermark,3451
+South Africa,KwaZulu-Natal,3414
+Bulgaria,Plovdiv,3372
+Spain,"Murcia, Region de",3342
+Turkey,Konya,3335
+United States,Maryland,3323
+France,Bourgogne,3318
+Hungary,Gyor-Moson-Sopron,3303
+France,Auvergne,3282
+Italy,Sardegna,3195
+Romania,Brasov,3185
+Slovakia,Nitriansky kraj,3181
+Hungary,Fejer,3179
+Chile,Antofagasta,3174
+Romania,Prahova,3171
+United States,Indiana,3147
+Poland,Kujawsko-Pomorskie,3108
+Mexico,Baja California,3102
+Hungary,Csongrad,3100
+Romania,Sibiu,3046
+Hungary,Bacs-Kiskun,3006
+Finland,Pirkanmaa,2990
+Italy,Liguria,2977
+Norway,Sor-Trondelag,2966
+United States,Missouri,2956
+United Arab Emirates,Abu Zaby,2954
+Netherlands,Flevoland,2954
+Germany,Bremen,2952
+United States,Minnesota,2927
+Switzerland,Aargau,2906
+United States,Tennessee,2892
+Colombia,Valle del Cauca,2879
+Mexico,Guanajuato,2876
+Norway,Hordaland,2833
+Poland,Zachodniopomorskie,2804
+Hungary,Somogy,2800
+Poland,Lubelskie,2796
+Hungary,Veszprem,2781
+Romania,Galati,2779
+Chile,Araucania,2751
+Czech Republic,Olomoucky kraj,2732
+Russian Federation,Moskva,2732
+United States,Connecticut,2722
+Netherlands,Fryslan,2713
+Italy,Friuli-Venezia Giulia,2706
+Sweden,Ostergotlands Lan,2696
+Croatia,Splitsko-dalmatinska zupanija,2686
+Hungary,Baranya,2663
+Viet Nam,Dong Nai,2655
+United States,Nevada,2653
+Chile,Los Lagos,2650
+United States,Wisconsin,2650
+United States,South Carolina,2638
+Hungary,Szabolcs-Szatmar-Bereg,2630
+Brazil,Sao Paulo,2592
+Austria,Tirol,2551
+France,Basse-Normandie,2538
+Portugal,Setubal,2537
+Czech Republic,Liberecky kraj,2509
+France,Champagne-Ardenne,2499
+Netherlands,Groningen,2481
+Slovakia,Zilinsky kraj,2449
+Austria,Salzburg,2445
+Romania,Dolj,2400
+United States,Utah,2397
+Italy,Abruzzo,2367
+Norway,Ostfold,2335
+Belgium,Namur,2324
+Spain,Extremadura,2316
+Romania,Olt,2311
+Poland,Opolskie,2303
+Sweden,Jonkopings Lan,2296
+Spain,"Asturias, Principado de",2289
+Italy,Trentino-Alto Adige,2285
+United States,Oregon,2275
+Austria,Karnten,2273
+Turkey,Mersin,2261
+United States,Alabama,2232
+Romania,Bacau,2201
+Sweden,Uppsala Lan,2199
+Sweden,Vastmanlands Lan,2184
+Turkey,Adana,2171
+South Africa,Free State,2168
+Slovakia,Kosicky kraj,2153
+Poland,Warminsko-Mazurskie,2109
+Switzerland,Geneve,2099
+United States,Louisiana,2069
+Romania,Maramures,2000
+Turkey,Balikesir,1990
+Hungary,Heves,1982
+Philippines,Rizal,1967
+Romania,Bihor,1963
+Slovakia,Trnavsky kraj,1952
+Switzerland,Sankt Gallen,1952
+Czech Republic,Plzensky kraj,1938
+Portugal,Aveiro,1916
+Mexico,Tamaulipas,1913
+Australia,Australian Capital Territory,1892
+Belgium,Brabant Wallon,1886
+Slovakia,Presovsky kraj,1886
+Switzerland,Luzern,1880
+United Arab Emirates,Ash Shariqah,1863
+Serbia,Vojvodina,1857
+Hungary,Zala,1840
+Bulgaria,Varna,1838
+Lithuania,Klaipedos Apskritis,1827
+Romania,Hunedoara,1826
+Romania,Arad,1820
+Czech Republic,Kralovehradecky kraj,1811
+Czech Republic,Vysocina kraj,1794
+Italy,Umbria,1787
+Turkey,Aydin,1785
+Costa Rica,San Jose,1780
+Netherlands,Zeeland,1776
+Portugal,Braga,1774
+Hungary,Komarom-Esztergom,1773
+Ecuador,Pichincha,1772
+Argentina,Cordoba,1769
+Hungary,Jasz-Nagykun-Szolnok,1760
+Poland,Lubuskie,1759
+Czech Republic,Jihocesky kraj,1754
+Mexico,Aguascalientes,1730
+Mexico,Coahuila,1726
+United States,Kentucky,1723
+Czech Republic,Zlinsky kraj,1707
+Netherlands,Drenthe,1707
+Portugal,Faro,1702
+Croatia,Istarska zupanija,1695
+Romania,Mures,1695
+Romania,Suceava,1694
+Sweden,Dalarnas Lan,1694
+New Zealand,Waikato,1688
+Slovakia,Banskobystricky kraj,1686
+Finland,Varsinais-Suomi,1682
+United States,Oklahoma,1668
+Croatia,Primorsko-goranska zupanija,1663
+Hungary,Bekes,1659
+Croatia,Osjecko-baranjska zupanija,1657
+Canada,Manitoba,1637
+Austria,Vorarlberg,1627
+Sweden,Hallands Lan,1626
+Mexico,Chihuahua,1622
+Croatia,Zagrebacka zupanija,1621
+Bulgaria,Burgas,1610
+Czech Republic,Pardubicky kraj,1591
+Lithuania,Panevezio Apskritis,1590
+Mexico,Michoacan,1589
+Finland,Pohjois-Pohjanmaa,1582
+Chile,Tarapaca,1582
+Romania,Dambovita,1561
+Norway,Buskerud,1560
+Poland,Swietokrzyskie,1559
+Australia,Tasmania,1554
+Norway,Vestfold,1554
+Romania,Braila,1552
+New Zealand,Canterbury,1538
+Romania,Valcea,1537
+New Zealand,Bay of Plenty,1537
+Dominican Republic,Distrito Nacional,1534
+Poland,Podlaskie,1532
+Turkey,Sakarya,1518
+Switzerland,Ticino,1504
+Sweden,Gavleborgs Lan,1503
+United States,Iowa,1497
+Sweden,Vasterbottens Lan,1491
+Argentina,Santa Fe,1486
+IPV6 ADDRESS MISSING IN IPV4 BIN,IPV6 ADDRESS MISSING IN IPV4 BIN,1474
+Turkey,Mugla,1469
+United States,Kansas,1465
+United States,Mississippi,1463
+Ireland,Meath,1459
+Switzerland,Basel-Landschaft,1453
+Ireland,Kildare,1448
+Sweden,Varmlands Lan,1448
+Romania,Alba,1445
+Turkey,Eskisehir,1442
+Romania,Gorj,1438
+United States,Idaho,1435
+Canada,Saskatchewan,1419
+United States,District Of Columbia,1411
+Ireland,Galway,1409
+Bosnia and Herzegovina,Federacija Bosna i Hercegovina,1407
+Uruguay,Montevideo,1388
+Mexico,Tabasco,1385
+Spain,Cantabria,1383
+Romania,Vrancea,1375
+Bulgaria,Sofia,1372
+Romania,Caras-Severin,1369
+Viet Nam,Binh Duong,1368
+France,Franche-Comte,1365
+France,Limousin,1351
+Mexico,Sonora,1348
+Spain,"Navarra, Comunidad Foral de",1347
+Ireland,Limerick,1346
+South Africa,North-West,1323
+Canada,New Brunswick,1320
+Romania,Teleorman,1316
+Turkey,Tekirdag,1315
+Turkey,Manisa,1313
+Estonia,Tartumaa,1311
+Finland,Kanta-Hame,1310
+Hungary,Vas,1300
+Czech Republic,Karlovarsky kraj,1298
+Norway,More og Romsdal,1295
+Norway,Nordland,1295
+Portugal,Leiria,1292
+United States,Arkansas,1288
+New Zealand,Wellington,1275
+Slovenia,Maribor,1272
+Mexico,Quintana Roo,1269
+Belgium,Luxembourg,1255
+Croatia,Zadarska zupanija,1249
+Turkey,Kayseri,1249
+Romania,Neamt,1244
+Switzerland,Fribourg,1197
+Lithuania,Siauliu Apskritis,1194
+Sweden,Sodermanlands Lan,1191
+Mexico,Oaxaca,1183
+Canada,Nova Scotia,1180
+Bulgaria,Stara Zagora,1174
+Portugal,Santarem,1171
+Bulgaria,Ruse,1154
+Finland,Pohjois-Savo,1154
+Colombia,Atlantico,1152
+Chile,Atacama,1139
+China,Zhejiang,1123
+Honduras,Francisco Morazan,1119
+United States,Nebraska,1112
+Sweden,Vasternorrlands Lan,1099
+Romania,Buzau,1091
+Sweden,Kronobergs Lan,1086
+Croatia,Dubrovacko-neretvanska zupanija,1084
+Sweden,Kalmar Lan,1081
+Mexico,Sinaloa,1073
+Mexico,Hidalgo,1071
+Chile,Los Rios,1068
+Croatia,Varazdinska zupanija,1059
+Norway,Hedmark,1056
+Switzerland,Solothurn,1056
+Hungary,Tolna,1054
+Turkey,Malatya,1047
+Romania,Satu Mare,1046
+Norway,Oppland,1045
+Colombia,Santander,1044
+Switzerland,Valais,1043
+Ireland,Wexford,1041
+Bulgaria,Haskovo,1037
+South Africa,Eastern Cape,1032
+Sweden,Norrbottens Lan,1030
+Turkey,Hatay,1029
+South Africa,Northern Cape,1024
+Ireland,Donegal,1020
+Turkey,Gaziantep,1011
+Portugal,Regiao Autonoma da Madeira,1010
+Mexico,Chiapas,1009
+Bulgaria,Blagoevgrad,1008
+South Africa,Limpopo,1006
+Switzerland,Thurgau,1005
+Portugal,Coimbra,1003
+Finland,Etela-Karjala,997
+Norway,Vest-Agder,988
+Romania,Botosani,987
+Turkey,Samsun,984
+Finland,Keski-Suomi,975
+Austria,Burgenland,973
+Colombia,Risaralda,973
+United States,West Virginia,971
+Mexico,Yucatan,970
+Bulgaria,Pleven,968
+Switzerland,Graubunden,963
+Mexico,Queretaro,960
+Sweden,Blekinge Lan,958
+United States,New Mexico,953
+Philippines,Cavite,951
+Philippines,Cebu,950
+Mexico,San Luis Potosi,921
+Philippines,Pampanga,909
+Finland,Paijat-Hame,908
+United States,Delaware,893
+New Zealand,Otago,890
+Lithuania,Telsiu Apskritis,889
+Turkey,Canakkale,886
+Ireland,Louth,869
+Hungary,Nograd,856
+Lithuania,Utenos Apskritis,835
+Turkey,Zonguldak,830
+Bulgaria,Veliko Tarnovo,828
+Ireland,Tipperary,826
+Chile,Arica y Parinacota,825
+Viet Nam,Can Tho,825
+Croatia,Bjelovarsko-bilogorska zupanija,823
+Costa Rica,Alajuela,821
+Ecuador,Guayas,814
+Croatia,Karlovacka zupanija,813
+Romania,Covasna,812
+Romania,Vaslui,811
+Turkey,Denizli,801
+Norway,Nord-Trondelag,800
+Norway,Telemark,795
+Viet Nam,Da Nang,792
+Finland,Satakunta,792
+Chile,Magallanes,785
+Latvia,Stopinu,781
+Turkey,Sanliurfa,769
+Portugal,Regiao Autonoma dos Acores,766
+Finland,Pohjanmaa,763
+United States,New Hampshire,751
+Portugal,Viseu,748
+Argentina,Mendoza,741
+India,Karnataka,734
+Viet Nam,Hai Phong,729
+"Bolivia, Plurinational State of",La Paz,726
+United States,Montana,726
+Ireland,Waterford,724
+Brazil,Rio de Janeiro,722
+Brazil,Minas Gerais,721
+Lithuania,Marijampoles Apskritis,720
+Turkey,Ordu,715
+Turkey,Sivas,711
+Estonia,Laane-Virumaa,710
+Ireland,Wicklow,707
+Colombia,Narino,706
+United States,Hawaii,703
+Finland,Lappi,700
+United States,Maine,699
+Peru,Callao,698
+Italy,Basilicata,695
+Sweden,Jamtlands Lan,694
+Finland,Etela-Pohjanmaa,693
+Mexico,Guerrero,692
+Luxembourg,Luxembourg,688
+Ireland,Offaly,688
+Turkey,Trabzon,688
+Ireland,Westmeath,677
+Ireland,Kerry,671
+Croatia,Sibensko-kninska zupanija,669
+Romania,Calarasi,666
+Finland,Kymenlaakso,661
+Switzerland,Zug,661
+Peru,La Libertad,660
+Croatia,Brodsko-posavska zupanija,660
+Philippines,Palawan,659
+South Africa,Mpumalanga,658
+Bulgaria,Gabrovo,651
+France,Corse,649
+Peru,Ancash,640
+Ireland,Clare,630
+India,Delhi,624
+Croatia,Sisacko-moslavacka zupanija,623
+Slovakia,Trenciansky kraj,618
+Romania,Giurgiu,616
+Mexico,Colima,611
+Ireland,Kilkenny,609
+Croatia,Krapinsko-zagorska zupanija,609
+Norway,Troms,606
+Peru,Arequipa,606
+Colombia,Bolivar,605
+Croatia,Medimurska zupanija,603
+Turkey,Diyarbakir,600
+India,Tamil Nadu,600
+New Zealand,Manawatu-Wanganui,600
+Turkey,Yalova,599
+Viet Nam,An Giang,595
+Bulgaria,Pazardzhik,589
+Ukraine,Kyiv,589
+Colombia,Magdalena,587
+Iceland,Hofudborgarsvaedi utan Reykjavikur,579
+Colombia,Tolima,577
+Ireland,Mayo,577
+Australia,Northern Territory,576
+Romania,Mehedinti,562
+Norway,Sogn og Fjordane,562
+Croatia,Koprivnicko-krizevacka zupanija,556
+Philippines,Laguna,556
+Turkey,Afyonkarahisar,549
+China,Beijing,544
+Bulgaria,Vratsa,543
+Switzerland,Neuchatel,539
+Portugal,Viana do Castelo,537
+Romania,Tulcea,536
+Bulgaria,Shumen,535
+Bulgaria,Kyustendil,534
+Turkey,Isparta,531
+Romania,Ialomita,530
+Philippines,Davao del Sur,530
+Romania,Bistrita-Nasaud,529
+Portugal,Evora,527
+Guatemala,Peten,527
+Colombia,Norte de Santander,523
+Romania,Harghita,522
+Finland,Pohjois-Karjala,522
+Ireland,Carlow,522
+Italy,Molise,514
+Turkey,Kirklareli,512
+Slovenia,Nova Gorica,512
+Switzerland,Schwyz,509
+Brazil,Parana,508
+Colombia,Boyaca,505
+Costa Rica,Cartago,504
+Philippines,Bulacan,499
+Japan,Tokyo,498
+Mexico,Baja California Sur,498
+Philippines,Zambales,497
+Turkey,Kahramanmaras,497
+Turkey,Van,496
+Argentina,Entre Rios,490
+Canada,Newfoundland and Labrador,489
+Costa Rica,Heredia,488
+Viet Nam,Long An,486
+Finland,Kainuu,483
+Mexico,Durango,483
+Spain,La Rioja,482
+Mexico,Nayarit,482
+India,Telangana,481
+Russian Federation,Sankt-Peterburg,479
+Mexico,Zacatecas,478
+United States,Wyoming,476
+Latvia,Rigas,473
+Bosnia and Herzegovina,Republika Srpska,469
+Bulgaria,Dobrich,468
+Norway,Aust-Agder,465
+New Zealand,Hawke's Bay,458
+United Arab Emirates,'Ajman,457
+Turkey,Edirne,454
+Estonia,Ida-Virumaa,453
+United States,Rhode Island,452
+Argentina,Neuquen,452
+Lithuania,Alytaus Apskritis,449
+Viet Nam,Kien Giang,448
+Switzerland,Schaffhausen,447
+Croatia,Vukovarsko-srijemska zupanija,447
+Turkey,Kutahya,440
+Philippines,Pangasinan,438
+United States,North Dakota,434
+Colombia,Caldas,430
+Portugal,Guarda,427
+Turkey,Duzce,427
+New Zealand,Northland,425
+Bulgaria,Montana,424
+Turkey,Erzurum,424
+India,Uttar Pradesh,420
+Peru,Ica,415
+Peru,Loreto,414
+Panama,Panama,414
+Philippines,Quezon,414
+Bulgaria,Razgrad,411
+Bulgaria,Sliven,411
+Ireland,Cavan,397
+Brazil,Rio Grande do Sul,393
+New Zealand,Southland,391
+Peru,Lambayeque,388
+Peru,Junin,382
+Croatia,Pozesko-slavonska zupanija,379
+Turkey,Kastamonu,379
+Latvia,Dobeles,377
+Romania,Salaj,371
+Philippines,Misamis Oriental,365
+Viet Nam,Quang Ninh,363
+Thailand,Krung Thep Maha Nakhon,362
+Latvia,Rezeknes,361
+New Zealand,Taranaki,360
+Viet Nam,Lam Dong,359
+Indonesia,Jakarta Raya,358
+United States,South Dakota,355
+Peru,Piura,354
+Latvia,Kekavas,351
+Portugal,Vila Real,348
+Bulgaria,Pernik,347
+Turkey,Rize,346
+Viet Nam,Binh Thuan,345
+Colombia,Cauca,338
+Nigeria,Lagos,335
+Bulgaria,Vidin,334
+Viet Nam,Dak Lak,330
+Philippines,Batangas,329
+Viet Nam,Tay Ninh,328
+Slovenia,Koper-Capodistria,327
+Mexico,Tlaxcala,326
+Turkey,Corum,325
+Colombia,Meta,324
+Switzerland,Glarus,320
+Colombia,Quindio,319
+Ireland,Laois,319
+Finland,Etela-Savo,319
+Argentina,Tucuman,318
+Argentina,Chubut,318
+Latvia,Daugavpils,318
+Colombia,Huila,316
+Tunisia,Tunis,316
+Kazakhstan,Astana,315
+"Bolivia, Plurinational State of",Santa Cruz,309
+Turkey,Bartin,306
+Norway,Finnmark,305
+Turkey,Elazig,305
+Peru,Cajamarca,304
+Turkey,Burdur,304
+Bulgaria,Smolyan,304
+Argentina,Rio Negro,303
+China,Guangdong,303
+Latvia,Valmieras,303
+Portugal,Beja,300
+Portugal,Castelo Branco,300
+Slovenia,Trzin,296
+Brazil,Santa Catarina,294
+Viet Nam,Bac Ninh,290
+Ireland,Monaghan,289
+Viet Nam,Dong Thap,289
+"Iran, Islamic Republic of",Tehran,289
+New Zealand,Nelson,287
+Argentina,Salta,283
+Greece,Attiki,282
+Latvia,Liepaja,281
+Mexico,Campeche,280
+Bulgaria,Silistra,279
+Turkey,Aksaray,279
+South Africa,-,278
+Viet Nam,Phu Tho,276
+Panama,Chiriqui,274
+Argentina,Misiones,274
+Turkey,Giresun,272
+Estonia,Parnumaa,271
+Azerbaijan,Baki,271
+Saudi Arabia,Ar Riyad,270
+Turkey,Bolu,270
+Ireland,Sligo,268
+Latvia,Kraslavas,268
+Turkey,Batman,267
+Turkey,Tokat,265
+Bulgaria,Lovech,265
+India,West Bengal,262
+Peru,Tumbes,261
+Cuba,La Habana,261
+United Arab Emirates,Ra's al Khaymah,261
+Viet Nam,-,260
+Viet Nam,Thanh Hoa,260
+Turkey,Erzincan,260
+Slovenia,Izola-Isola,258
+Viet Nam,Binh Dinh,258
+United States,Vermont,258
+Viet Nam,Khanh Hoa,257
+India,Gujarat,257
+El Salvador,San Salvador,255
+Brazil,Distrito Federal,255
+United States,Alaska,254
+Viet Nam,Lang Son,252
+Bulgaria,Kardzhali,252
+Philippines,Negros Occidental,252
+Viet Nam,Thua Thien-Hue,252
+Turkey,Karabuk,250
+Portugal,Portalegre,246
+Morocco,Grand Casablanca,246
+Turkey,Nigde,246
+Chile,Aysen,245
+Viet Nam,Vinh Long,245
+Viet Nam,Hai Duong,244
+Philippines,South Cotabato,241
+Estonia,Viljandimaa,240
+Turkey,Usak,240
+Turkey,Mardin,240
+India,Kerala,239
+Argentina,San Luis,239
+Slovenia,Sevnica,238
+Slovenia,Celje,237
+Brazil,Goias,236
+Viet Nam,Binh Phuoc,236
+Morocco,Rabat-Sale-Zemmour-Zaer,235
+Peru,Huanuco,234
+Colombia,Cesar,232
+Viet Nam,Ca Mau,232
+Sweden,Gotlands Lan,232
+Isle of Man,Isle of Man,232
+Turkey,Kirikkale,231
+Brazil,Ceara,231
+Bulgaria,Targovishte,231
+Latvia,Jelgavas,230
+"Taiwan, Province of China",T'ai-wan,227
+Ireland,Roscommon,227
+Argentina,Corrientes,227
+Switzerland,Appenzell Ausserrhoden,226
+Peru,Cusco,223
+India,Haryana,223
+Canada,Prince Edward Island,223
+Canada,Nunavut,220
+Peru,San Martin,220
+Guatemala,Izabal,217
+Viet Nam,Ninh Thuan,217
+Honduras,Cortes,216
+Slovenia,Velenje,215
+Brazil,Bahia,214
+Croatia,Licko-senjska zupanija,213
+Ireland,Leitrim,211
+Latvia,Aluksnes,210
+Italy,Valle d'Aosta,210
+Ireland,Longford,208
+Turkey,Agri,207
+Portugal,Braganca,207
+Viet Nam,Thai Nguyen,204
+Malaysia,Selangor,203
+Russian Federation,Moskovskaya oblast',203
+Viet Nam,Soc Trang,202
+Turkey,Osmaniye,201
+Israel,Yerushalayim,200
+Argentina,Santiago del Estero,199
+Brazil,Pernambuco,198
+Turkey,Nevsehir,195
+Pakistan,Sindh,194
+Viet Nam,Quang Ngai,192
+Switzerland,Jura,192
+Paraguay,Central,191
+Slovenia,Kranj,189
+Switzerland,Obwalden,189
+Pakistan,Punjab,189
+Turkey,Amasya,188
+Angola,Luanda,188
+Philippines,Iloilo,188
+Viet Nam,Tien Giang,186
+Colombia,Cordoba,184
+Philippines,Nueva Ecija,182
+Bulgaria,Yambol,180
+Philippines,Zamboanga del Sur,179
+Viet Nam,Vinh Phuc,179
+New Zealand,Tasman,179
+Argentina,Chaco,178
+Turkey,Yozgat,177
+Turkey,Bilecik,177
+Argentina,Santa Cruz,175
+Guatemala,Jutiapa,174
+Colombia,La Guajira,174
+Costa Rica,Limon,173
+Algeria,Alger,171
+Latvia,Incukalna,170
+Greece,Thessaloniki,170
+Argentina,Jujuy,164
+Viet Nam,Bac Giang,163
+Viet Nam,Nghe An,162
+Canada,Northwest Territories,162
+Viet Nam,Thai Binh,162
+Viet Nam,Ben Tre,160
+Guatemala,Retalhuleu,157
+Viet Nam,Tra Vinh,157
+Brazil,Espirito Santo,156
+Philippines,Tarlac,153
+Cote D'ivoire,Lagunes,153
+Argentina,San Juan,152
+Argentina,Formosa,151
+Serbia,Kosovo,150
+Viet Nam,Gia Lai,149
+Ukraine,Odes'ka Oblast',149
+Philippines,Lanao del Norte,149
+Croatia,Viroviticko-podravska zupanija,149
+Guatemala,Jalapa,148
+Turkey,Gumushane,148
+Latvia,Ogres,147
+"Bolivia, Plurinational State of",Cochabamba,147
+Netherlands,-,145
+Estonia,Saaremaa,144
+Turkey,Karaman,143
+United Arab Emirates,Al Fujayrah,143
+Slovenia,Domzale,143
+Turkey,Adiyaman,142
+Turkey,Kirsehir,142
+Finland,Keski-Pohjanmaa,141
+Albania,Tirane,141
+Colombia,Casanare,140
+Viet Nam,Ha Nam,140
+Mozambique,Maputo,140
+Slovenia,Skofja Loka,139
+Uruguay,Canelones,139
+France,-,139
+Turkey,Sirnak,137
+Costa Rica,Guanacaste,136
+Turkey,Kars,135
+"Korea, Republic of",Seoul,134
+Philippines,Bohol,133
+Latvia,Babites,133
+Bangladesh,Dhaka,132
+India,Andhra Pradesh,131
+Colombia,Choco,131
+Philippines,Bataan,129
+Ukraine,L'vivs'ka Oblast',128
+Switzerland,Nidwalden,128
+Sri Lanka,Western Province,128
+Spain,Ceuta,127
+Georgia,T'bilisi,127
+Israel,HaMerkaz,126
+Costa Rica,Puntarenas,126
+Dominican Republic,Santiago,125
+Slovenia,Skofljica,124
+Colombia,Sucre,124
+Turkey,Cankiri,124
+Latvia,Ventspils,123
+Ukraine,Donets'ka Oblast',122
+Turkey,Bingol,122
+Cyprus,Lefkosia,122
+China,Hebei,121
+Argentina,La Pampa,120
+New Zealand,Gisborne,119
+Viet Nam,Quang Nam,118
+Senegal,Dakar,118
+Montenegro,Budva,117
+Slovenia,Kamnik,116
+Belarus,Minskaya Voblasts',116
+Viet Nam,Hung Yen,116
+Colombia,Arauca,115
+Russian Federation,Sverdlovskaya oblast',115
+Viet Nam,Ninh Binh,114
+Slovenia,Novo Mesto,113
+Viet Nam,Quang Tri,111
+"Macedonia, The Former Yugoslav Republic of",Skopje,111
+Philippines,Benguet,111
+Slovenia,Krsko,110
+Turkey,Mus,110
+India,Madhya Pradesh,109
+Estonia,Raplamaa,109
+Lithuania,Taurages Apskritis,108
+New Zealand,West Coast,108
+Argentina,La Rioja,107
+New Zealand,Marlborough,106
+Slovenia,Lasko,104
+Czech Republic,-,102
+Qatar,Ad Dawhah,102
+Ukraine,Kyivs'ka Oblast',102
+India,Rajasthan,101
+Turkey,Siirt,101
+"Korea, Republic of",Gyeonggi,101
+Latvia,Preilu,100
+Turkey,Sinop,100
+Latvia,Jurmala,99
+Estonia,Laanemaa,98
+Latvia,Jekabpils,98
+Egypt,Al Qahirah,97
+Canada,Yukon,97
+Turkey,Artvin,97
+Nicaragua,Managua,97
+Slovenia,Ptuj,95
+Peru,Ayacucho,95
+Argentina,-,94
+Estonia,Vorumaa,94
+Cameroon,Littoral,94
+Viet Nam,Bac Lieu,94
+Slovenia,Murska Sobota,92
+Russian Federation,"Tatarstan, Respublika",91
+Luxembourg,Diekirch,90
+Malaysia,Wilayah Persekutuan Kuala Lumpur,90
+Slovenia,Medvode,88
+United Kingdom,-,88
+Switzerland,Uri,86
+Philippines,Capiz,86
+Latvia,Tukuma,86
+India,Punjab,85
+Estonia,Valgamaa,85
+"Iran, Islamic Republic of",Markazi,85
+Slovenia,Piran,85
+Estonia,Jarvamaa,85
+Latvia,Jelgava,84
+Indonesia,Jawa Barat,84
+"Moldova, Republic of",Dubasari,83
+Philippines,Quirino,83
+Brazil,Paraiba,83
+Viet Nam,Nam Dinh,82
+Latvia,Valkas,82
+Reunion,Reunion,82
+Slovenia,Polzela,81
+Kenya,Nairobi Area,81
+Philippines,Camarines Sur,80
+United States,-,80
+Peru,Ucayali,79
+Brazil,Mato Grosso do Sul,79
+Honduras,Atlantida,79
+Turkey,Tunceli,78
+"Moldova, Republic of",Bender,78
+Israel,Tel-Aviv,78
+Slovenia,Zalec,77
+Montenegro,Podgorica,76
+Turkey,Hakkari,76
+Brazil,Mato Grosso,76
+Estonia,Jogevamaa,76
+Brazil,Amazonas,76
+Viet Nam,Yen Bai,75
+Estonia,Polvamaa,75
+Peru,Apurimac,75
+Slovenia,Crensovci,75
+Slovenia,Sentjur pri Celju,74
+Uzbekistan,Toshkent,74
+Brazil,Para,73
+Slovenia,Miklavz na Dravskem Polju,73
+Slovenia,Brezice,72
+"Congo, The Democratic Republic of The",Kinshasa,71
+Pakistan,Islamabad,71
+Slovenia,Trebnje,71
+Egypt,Al Jizah,71
+Turkey,Kilis,71
+Nepal,Bagmati,70
+Brazil,Maranhao,70
+Spain,Melilla,70
+Dominican Republic,Monsenor Nouel,69
+Colombia,Caqueta,69
+Suriname,Paramaribo,69
+Viet Nam,Phu Yen,69
+Viet Nam,Ha Tinh,68
+Viet Nam,Lao Cai,68
+Argentina,Tierra del Fuego,68
+Ukraine,Kharkivs'ka Oblast',67
+Lithuania,-,67
+Honduras,-,67
+Lebanon,Beyrouth,67
+Philippines,Cotabato,67
+Brazil,Rio Grande do Norte,65
+Viet Nam,Cao Bang,65
+Slovenia,Gornja Radgona,65
+Philippines,Isabela,65
+Peru,Puno,65
+Brazil,Piaui,65
+Philippines,La Union,64
+Honduras,Santa Barbara,64
+Zimbabwe,Harare,64
+Slovenia,Prevalje,63
+Dominican Republic,Maria Trinidad Sanchez,63
+Kuwait,Al Asimah,63
+Viet Nam,Hoa Binh,62
+Honduras,Valle,62
+Slovenia,Lenart,62
+Montenegro,Niksic,62
+"Tanzania, United Republic of",Dar es Salaam,61
+Slovenia,Radovljica,61
+"Iran, Islamic Republic of",Kerman,61
+Germany,-,61
+Turkey,Bayburt,61
+Saudi Arabia,Ash Sharqiyah,60
+Dominican Republic,San Cristobal,60
+El Salvador,La Libertad,60
+"Bolivia, Plurinational State of",Potosi,60
+Slovenia,Grosuplje,60
+Latvia,Balvu,59
+Ecuador,Azuay,59
+Turkey,Bitlis,58
+India,Bihar,58
+Sweden,-,58
+Latvia,Aizkraukles,58
+Latvia,Siguldas,58
+"Moldova, Republic of",Balti,58
+Latvia,Bauskas,58
+Philippines,Cagayan,57
+Ukraine,Ivano-Frankivs'ka Oblast',57
+Argentina,Catamarca,57
+Slovenia,Bled,57
+Dominican Republic,San Pedro De Macoris,56
+Slovenia,Brezovica,55
+Slovenia,Rogaska Slatina,55
+Slovenia,Ivancna Gorica,54
+Philippines,Negros Oriental,54
+Guatemala,Zacapa,54
+Ecuador,El Oro,53
+Saudi Arabia,Makkah al Mukarramah,53
+Dominican Republic,La Romana,53
+Guatemala,Sacatepequez,53
+China,Jiangsu,53
+Syrian Arab Republic,Dimashq,53
+Latvia,Limbazu,52
+Iceland,Nordurland eystra,52
+Curacao,Curacao,52
+Madagascar,Antananarivo,52
+India,Odisha,52
+Jordan,Al 'Asimah,51
+Benin,Littoral,51
+Japan,Osaka,51
+Ukraine,Zakarpats'ka Oblast',51
+United Arab Emirates,Umm al Qaywayn,51
+Philippines,Aklan,51
+Paraguay,Asuncion,51
+Slovenia,Bohinj,50
+El Salvador,Santa Ana,49
+Ecuador,Loja,49
+Cambodia,Phnom Penh,49
+Gabon,Estuaire,49
+Slovenia,Jesenice,49
+"Moldova, Republic of",Ialoveni,48
+Philippines,Misamis Occidental,48
+Slovenia,Slovenska Bistrica,48
+"Venezuela, Bolivarian Republic of",Distrito Federal,48
+Ukraine,Dnipropetrovs'ka Oblast',47
+Slovenia,Zagorje ob Savi,47
+Israel,Hefa,47
+Uruguay,Maldonado,46
+"Moldova, Republic of",Orhei,46
+Latvia,Cesu,45
+Martinique,Martinique,45
+Latvia,Kuldigas,45
+Philippines,Agusan del Norte,45
+Switzerland,Appenzell Innerrhoden,45
+China,Henan,44
+Slovenia,Slovenj Gradec,44
+Poland,-,44
+Ukraine,Ternopil's'ka Oblast',44
+Viet Nam,Tuyen Quang,44
+Guatemala,San Marcos,44
+Botswana,South-East,44
+Japan,Aichi,43
+Slovenia,Poljcane,43
+Guatemala,Escuintla,43
+Armenia,Erevan,43
+Slovenia,Zrece,43
+Honduras,Islas de la Bahia,43
+Faroe Islands,Streymoy,43
+Seychelles,English River,42
+Philippines,Bukidnon,42
+El Salvador,Usulutan,42
+Morocco,Marrakech-Tensift-Al Haouz,42
+Lesotho,Maseru,42
+Japan,Saitama,42
+Brazil,Alagoas,42
+Morocco,Tanger-Tetouan,42
+Malaysia,Johor,42
+India,Chhattisgarh,41
+"Moldova, Republic of",Cahul,41
+Mauritius,Plaines Wilhems,41
+Haiti,Ouest,41
+Algeria,Oran,41
+"Moldova, Republic of",Ocnita,40
+Iraq,Baghdad,40
+Brazil,Sergipe,40
+Brazil,Rondonia,40
+"Venezuela, Bolivarian Republic of",Zulia,40
+Slovenia,Hrastnik,40
+Mali,Bamako,40
+Algeria,Constantine,40
+Slovenia,Dravograd,40
+Latvia,Olaines,40
+Jersey,Jersey,40
+Togo,Maritime,39
+Dominican Republic,La Vega,39
+Algeria,Annaba,39
+Hungary,-,39
+Colombia,Putumayo,38
+"Moldova, Republic of","Stinga Nistrului, unitatea teritoriala din",38
+Ecuador,Manabi,38
+Indonesia,Jawa Timur,38
+Ghana,Greater Accra,38
+Viet Nam,Quang Binh,38
+"Macedonia, The Former Yugoslav Republic of",Bitola,37
+Slovenia,Postojna,37
+Slovenia,Logatec,37
+Slovenia,Mozirje,37
+China,Shanghai,37
+Tunisia,Nabeul,36
+Latvia,Gulbenes,36
+Dominican Republic,La Altagracia,36
+Slovenia,Pivka,36
+Iraq,Arbil,36
+India,Assam,36
+Cyprus,Lemesos,35
+Bulgaria,-,35
+Liechtenstein,Vaduz,35
+Pakistan,Khyber Pakhtunkhwa,35
+Japan,Chiba,35
+Latvia,Ludzas,35
+Viet Nam,Ha Giang,35
+Rwanda,Ville de Kigali,34
+Japan,Kanagawa,34
+Philippines,Abra,34
+Slovenia,Ig,34
+Bahrain,Al Asimah,34
+Japan,Hyogo,34
+Slovenia,Ribnica,33
+Guernsey,Guernsey (general),33
+Honduras,Yoro,33
+Philippines,Ilocos Sur,33
+Slovenia,Trbovlje,33
+Congo,Brazzaville,33
+Peru,Tacna,33
+Guatemala,Chiquimula,33
+"Iran, Islamic Republic of",Khuzestan,32
+Slovenia,Kranjska Gora,32
+Latvia,Malpils,32
+El Salvador,Ahuachapan,32
+Slovenia,Kidricevo,32
+Algeria,Tipaza,32
+Brazil,-,32
+Ecuador,Tungurahua,32
+Viet Nam,Dien Bien,32
+Monaco,Monaco,32
+Greenland,Kommuneqarfik Sermersooq,32
+India,Jammu and Kashmir,31
+Oman,Masqat,31
+"Venezuela, Bolivarian Republic of",Bolivar,31
+Ecuador,Chimborazo,31
+Philippines,Ilocos Norte,31
+Afghanistan,Kabul,31
+"Moldova, Republic of",Hincesti,30
+Slovenia,Radece,30
+Slovenia,Racam,30
+Ukraine,Khmel'nyts'ka Oblast',30
+Latvia,Ozolnieku,30
+India,Chandigarh,30
+Fiji,Central,30
+Slovenia,Kocevje,30
+Ukraine,Kirovohrads'ka Oblast',30
+Tunisia,Sousse,30
+Latvia,-,30
+Macao,Macau,29
+Brazil,Tocantins,28
+French Polynesia,Iles du Vent,28
+Malaysia,Pulau Pinang,28
+"Moldova, Republic of",Falesti,28
+Lebanon,Mont-Liban,28
+Honduras,Colon,28
+Viet Nam,Son La,28
+China,Sichuan,28
+"Moldova, Republic of",Soroca,27
+Malaysia,Sarawak,27
+Slovenia,Sencur,27
+Ukraine,Zaporiz'ka Oblast',27
+India,Uttarakhand,27
+Morocco,Fes-Boulemane,27
+Bangladesh,Chittagong,27
+"Venezuela, Bolivarian Republic of",Carabobo,26
+Tunisia,Aiana,26
+Slovenia,Vojnik,26
+Philippines,Albay,26
+Slovenia,Cerknica,25
+Aland Islands,Mariehamn,25
+Russian Federation,Leningradskaya oblast',25
+Slovenia,Metlika,25
+Russian Federation,Novgorodskaya oblast',25
+Lao People's Democratic Republic,Vientiane,25
+Tunisia,Al Munastir,25
+Russian Federation,Kemerovskaya oblast',25
+Slovenia,Ravne na Koroskem,25
+Peru,Moquegua,25
+Montenegro,Zabljak,25
+Greece,Iraklion,24
+"Venezuela, Bolivarian Republic of",Miranda,24
+Brunei Darussalam,Brunei-Muara,24
+Puerto Rico,Aguas Buenas,24
+Liechtenstein,Eschen,24
+Turkey,Igdir,24
+"Moldova, Republic of",Drochia,24
+China,Fujian,24
+Philippines,Samar (Western Samar),24
+"Moldova, Republic of",Rezina,24
+Tunisia,Sfax,23
+Guadeloupe,Guadeloupe,23
+"Venezuela, Bolivarian Republic of",Anzoategui,23
+Slovenia,Radenci,23
+Montenegro,Bar,23
+Slovenia,Ormoz,23
+Latvia,Adazu,23
+Latvia,Rojas,23
+Estonia,Hiiumaa,23
+Malaysia,Sabah,23
+Sri Lanka,Southern Province,23
+Ukraine,Poltavs'ka Oblast',23
+"Bolivia, Plurinational State of",Tarija,23
+Dominican Republic,Puerto Plata,23
+Slovenia,Vrhnika,22
+China,Shandong,22
+Ukraine,Mykolaivs'ka Oblast',22
+Russian Federation,Primorskiy kray,22
+"Taiwan, Province of China",T'ai-pei,22
+Ecuador,Los Rios,22
+India,Himachal Pradesh,22
+Slovenia,Crnomelj,22
+Israel,HaTsafon,22
+Russian Federation,"Bashkortostan, Respublika",22
+Japan,Fukuoka,22
+China,Shanxi,22
+Slovenia,Trzic,22
+Honduras,Copan,22
+Malaysia,Perak,21
+Kazakhstan,Soltustik Qazaqstan oblysy,21
+Morocco,L'Oriental,21
+Jamaica,Kingston,21
+Ukraine,Vinnyts'ka Oblast',21
+Indonesia,Riau,21
+Slovenia,Hoce-Slivnica,21
+Russian Federation,Krasnodarskiy kray,21
+Myanmar,Yangon,21
+Nigeria,Abuja Federal Capital Territory,21
+Nigeria,Plateau,21
+India,Jharkhand,20
+Latvia,Carnikavas,20
+Russian Federation,Tomskaya oblast',20
+Puerto Rico,Fajardo,20
+Ukraine,Sums'ka Oblast',20
+Slovenia,Straza,20
+Jamaica,Saint Andrew,20
+Iceland,Sudurnes,20
+Indonesia,Jawa Tengah,20
+Kuwait,Al Farwaniyah,20
+Morocco,Meknes-Tafilalet,20
+Slovenia,Kanal,20
+Namibia,Khomas,20
+Morocco,Souss-Massa-Draa,20
+Burkina Faso,Kadiogo,19
+Luxembourg,Grevenmacher,19
+Slovenia,Ruse,19
+Japan,Hokkaido,19
+Latvia,Talsu,19
+"Moldova, Republic of",Cimislia,19
+"Moldova, Republic of",Straseni,19
+Ukraine,Chernihivs'ka Oblast',19
+El Salvador,San Miguel,19
+Latvia,Jaunjelgavas,19
+Slovenia,Sostanj,19
+"Moldova, Republic of",Telenesti,19
+Tunisia,Manouba,19
+Russian Federation,Chelyabinskaya oblast',19
+Ecuador,Imbabura,19
+Belize,Belize,19
+Cyprus,Larnaka,19
+China,Liaoning,19
+Puerto Rico,Yabucoa,19
+"Moldova, Republic of",Floresti,18
+Dominican Republic,Duarte,18
+Mozambique,Nampula,18
+"Venezuela, Bolivarian Republic of",Aragua,18
+Iceland,Sudurland,18
+Uganda,Kampala,18
+New Caledonia,Province Sud,18
+San Marino,San Marino,18
+Puerto Rico,Caguas,18
+Dominican Republic,Espaillat,18
+Dominican Republic,San Juan,18
+Greece,Dhodhekanisos,18
+El Salvador,San Vicente,18
+China,Hunan,18
+Iceland,Vesturland,18
+"Moldova, Republic of",Edinet,18
+Latvia,Beverinas,18
+Slovenia,Bovec,18
+Slovenia,Slovenske Konjice,17
+Ukraine,Zhytomyrs'ka Oblast',17
+Bangladesh,Khulna,17
+Iceland,Austurland,17
+Thailand,Chon Buri,17
+Slovenia,Lendava,17
+Djibouti,Djibouti,17
+"Moldova, Republic of",Singerei,17
+Bahamas,New Providence,17
+Colombia,Vaupes,17
+Slovenia,Prebold,17
+"Moldova, Republic of","Gagauzia, Unitatea teritoriala autonoma",17
+Gibraltar,Gibraltar,17
+Slovenia,Ljutomer,17
+China,Hubei,17
+Philippines,Leyte,17
+Viet Nam,Lai Chau,17
+Russian Federation,Khabarovskiy kray,16
+Slovenia,Tolmin,16
+Australia,-,16
+Saudi Arabia,Al Madinah al Munawwarah,16
+Slovenia,Radlje ob Dravi,16
+Russian Federation,Volgogradskaya oblast',16
+Russian Federation,Irkutskaya oblast',16
+"Macedonia, The Former Yugoslav Republic of",Petrovec,16
+Japan,Hiroshima,16
+Slovenia,Ziri,16
+Russian Federation,Kaliningradskaya oblast',16
+Ukraine,Volyns'ka Oblast',16
+Slovenia,Divaca,16
+Slovenia,Idrija,16
+"Moldova, Republic of",Anenii Noi,16
+Syrian Arab Republic,Rif Dimashq,16
+Puerto Rico,Bayamon,16
+Cayman Islands,Cayman Islands,16
+Ukraine,Chernivets'ka Oblast',16
+Slovenia,Destrnik,16
+Ukraine,Rivnens'ka Oblast',16
+Cameroon,Centre,16
+Albania,Durres,15
+China,Jiangxi,15
+Viet Nam,Bac Kan,15
+"Moldova, Republic of",Ungheni,15
+"Iran, Islamic Republic of",Esfahan,15
+"Moldova, Republic of",Calarasi,15
+Philippines,Surigao del Norte,15
+Qatar,Ar Rayyan,15
+Algeria,Boumerdes,15
+Morocco,Doukhala-Abda,15
+Russian Federation,Novosibirskaya oblast',15
+Russian Federation,Samarskaya oblast',15
+El Salvador,La Union,15
+Belarus,Brestskaya Voblasts',15
+Japan,Ibaraki,15
+Libya,Tarabulus,15
+Bermuda,Hamilton,15
+"Iran, Islamic Republic of",Alborz,15
+Ukraine,Cherkas'ka Oblast',14
+Israel,HaDarom,14
+Algeria,Blida,14
+Slovenia,Ajdovscina,14
+Ethiopia,Adis Abeba,14
+Slovenia,Menges,14
+Thailand,Nakhon Ratchasima,14
+"Moldova, Republic of",Criuleni,14
+Liechtenstein,Mauren,14
+Nicaragua,Nueva Segovia,14
+Slovenia,Vodice,14
+Slovenia,Horjul,14
+Mauritania,Nouakchott,14
+Slovakia,-,14
+Latvia,Salacgrivas,14
+Italy,-,14
+Cabo Verde,Praia,14
+Algeria,Setif,13
+Uruguay,Soriano,13
+Ukraine,Luhans'ka Oblast',13
+Montenegro,Kotor,13
+Peru,Huancavelica,13
+Turkmenistan,Ahal,13
+China,Shaanxi,13
+Qatar,Al Wakrah,13
+Russian Federation,Krasnoyarskiy kray,13
+Japan,Shizuoka,13
+"Venezuela, Bolivarian Republic of",Lara,13
+Kyrgyzstan,Bishkek,13
+"Moldova, Republic of",Glodeni,13
+Latvia,Iecavas,13
+Puerto Rico,San Juan,13
+"Taiwan, Province of China",Kao-hsiung,13
+Greece,Messinia,13
+"Bolivia, Plurinational State of",Oruro,13
+Japan,Miyagi,13
+Russian Federation,Rostovskaya oblast',13
+Aruba,Aruba (general),13
+Sudan,Khartoum,13
+Cyprus,Pafos,13
+China,Guangxi,13
+Gabon,Ogooue-Maritime,13
+Russian Federation,Voronezhskaya oblast',13
+Slovenia,Kobarid,12
+India,Manipur,12
+"Iran, Islamic Republic of",Azarbayjan-e Sharqi,12
+Slovenia,Store,12
+"Bonaire, Sint Eustatius and Saba",Bonaire,12
+Philippines,Sorsogon,12
+Thailand,Pathum Thani,12
+Latvia,Madonas,12
+Slovenia,Litija,12
+Zimbabwe,Bulawayo,12
+Cabo Verde,Sal,12
+"Venezuela, Bolivarian Republic of",Nueva Esparta,12
+Russian Federation,Yaroslavskaya oblast',12
+Greece,Kerkira,12
+"Iran, Islamic Republic of",Khorasan-e Razavi,12
+Turkey,-,12
+Uruguay,Salto,12
+Malaysia,Pahang,12
+Puerto Rico,San Lorenzo,12
+Papua New Guinea,National Capital District,12
+Japan,Kyoto,12
+Egypt,Al Qalyubiyah,12
+"Iran, Islamic Republic of",Mazandaran,12
+Tunisia,Ben Arous,11
+Slovenia,Log-Dragomer,11
+"Congo, The Democratic Republic of The",Katanga,11
+Greece,Korinthia,11
+Dominican Republic,Monte Plata,11
+Kazakhstan,Almaty,11
+Dominican Republic,Azua,11
+Algeria,Batna,11
+Azerbaijan,Agdas,11
+"Korea, Republic of",Incheon,11
+"Korea, Republic of",Chungnam,11
+Indonesia,Bali,11
+Nigeria,Kaduna,11
+Algeria,Tizi Ouzou,11
+Slovenia,Sentilj,11
+Mongolia,Ulaanbaatar,11
+Uruguay,Paysandu,11
+"Virgin Islands, British",British Virgin Islands,11
+"Moldova, Republic of",Causeni,11
+Iraq,As Sulaymaniyah,11
+Slovenia,Zelezniki,11
+Turkey,Ardahan,11
+Tunisia,Jendouba,11
+Slovenia,Lovrenc na Pohorju,11
+Indonesia,Yogyakarta,11
+Ecuador,Carchi,11
+Slovenia,Ilirska Bistrica,11
+Swaziland,Hhohho,11
+Bangladesh,Sylhet,11
+Morocco,Gharb-Chrarda-Beni Hssen,11
+"Moldova, Republic of",Riscani,11
+Russian Federation,Tambovskaya oblast',11
+Russian Federation,Tul'skaya oblast',11
+Azerbaijan,Zaqatala,11
+Russian Federation,-,10
+Brazil,Amapa,10
+Andorra,Andorra la Vella,10
+Niger,Niamey,10
+Lebanon,Nabatiye,10
+Malawi,Blantyre,10
+"Macedonia, The Former Yugoslav Republic of",Stip,10
+Tunisia,Madanin,10
+Saudi Arabia,Jazan,10
+Philippines,Sultan Kudarat,10
+India,-,10
+Greece,Ioannina,10
+Philippines,Camarines Norte,10
+Slovenia,Turnisce,10
+Syrian Arab Republic,Tartus,10
+Russian Federation,Ryazanskaya oblast',10
+Sri Lanka,North Western Province,10
+Zambia,Lusaka,10
+Greece,Akhaia,10
+Trinidad and Tobago,Trinidad and Tobago,10
+Somalia,Banaadir,10
+Slovenia,Sempeter-Vrtojba,10
+"Tanzania, United Republic of",Lindi,10
+Dominican Republic,El Seibo,10
+Iraq,Dahuk,10
+Ukraine,Sevastopol',10
+Jamaica,Clarendon,10
+Albania,Elbasan,10
+Dominican Republic,Peravia,10
+Sri Lanka,Central Province,10
+Peru,Pasco,10
+"Iran, Islamic Republic of",Hormozgan,9
+Kuwait,Hawalli,9
+Dominican Republic,Hato Mayor,9
+"Iran, Islamic Republic of",Fars,9
+Slovenia,Cerkno,9
+Latvia,Liepajas,9
+Colombia,Guaviare,9
+"Macedonia, The Former Yugoslav Republic of",Gostivar,9
+Puerto Rico,Moca,9
+Japan,-,9
+Russian Federation,"Sakha, Respublika",9
+Malaysia,Kedah,9
+"Iran, Islamic Republic of",Golestan,9
+Indonesia,Sumatera Utara,9
+Azerbaijan,Naxcivan,9
+Thailand,Nonthaburi,9
+Denmark,-,9
+"Bonaire, Sint Eustatius and Saba",Sint Eustatius,9
+"Iran, Islamic Republic of",Qom,9
+Ecuador,Zamora-Chinchipe,9
+Puerto Rico,Cayey,9
+Russian Federation,Tyumenskaya oblast',9
+Barbados,Saint Michael,9
+Russian Federation,Nizhegorodskaya oblast',9
+Azerbaijan,Sumqayit,9
+Dominican Republic,-,9
+Iraq,Al Basrah,9
+Burundi,Bujumbura Mairie,9
+Albania,Vlore,9
+Latvia,Saldus,9
+Russian Federation,Yamalo-Nenetskiy avtonomnyy okrug,9
+Georgia,Kvemo Kartli,9
+Philippines,Agusan del Sur,9
+"Korea, Republic of",Gyeongbuk,9
+"Macedonia, The Former Yugoslav Republic of",Strumica,8
+Latvia,Jaunpils,8
+Andorra,Escaldes-Engordany,8
+Bangladesh,Rajshahi,8
+Philippines,Marinduque,8
+Philippines,Maguindanao,8
+Jamaica,Manchester,8
+Algeria,Mascara,8
+"Bolivia, Plurinational State of",Chuquisaca,8
+Russian Federation,Murmanskaya oblast',8
+Morocco,Taza-Al Hoceima-Taounate,8
+Japan,Nagano,8
+Uruguay,Colonia,8
+Indonesia,Banten,8
+Serbia,-,8
+Bahrain,Al Muharraq,8
+Thailand,Surat Thani,8
+Azerbaijan,Astara,8
+Bangladesh,-,8
+Latvia,Kokneses,8
+Japan,Okinawa,8
+Puerto Rico,Vega Alta,8
+Liberia,Montserrado,8
+Russian Federation,Omskaya oblast',8
+Liechtenstein,Triesenberg,8
+Ukraine,Khersons'ka Oblast',8
+"Korea, Republic of",Gyeongnam,8
+Japan,Tochigi,8
+Greece,Lasithi,8
+Botswana,Kgatleng,8
+Algeria,Ain Defla,8
+Thailand,Phuket,8
+Russian Federation,Lipetskaya oblast',8
+El Salvador,Cuscatlan,8
+Nicaragua,Esteli,8
+Yemen,Hadramawt,8
+India,Tripura,8
+Thailand,Rayong,7
+Andorra,Encamp,7
+Sri Lanka,Eastern Province,7
+Pakistan,Azad Kashmir,7
+Greenland,Qaasuitsup Kommunia,7
+Honduras,Comayagua,7
+Greece,Magnisia,7
+China,Tianjin,7
+Kazakhstan,Qaraghandy oblysy,7
+Japan,Nara,7
+Uganda,Wakiso,7
+Japan,Mie,7
+Uruguay,Artigas,7
+Philippines,Masbate,7
+Latvia,Sejas,7
+Philippines,Zamboanga del Norte,7
+Albania,Fier,7
+Uruguay,Rocha,7
+Slovenia,Vuzenica,7
+Kenya,Coast,7
+Brunei Darussalam,Belait,7
+Russian Federation,Permskiy kray,7
+Russian Federation,Astrakhanskaya oblast',7
+"Macedonia, The Former Yugoslav Republic of",Ilinden,7
+"Venezuela, Bolivarian Republic of",Tachira,7
+Ecuador,Santa Elena,7
+Colombia,Amazonas,7
+"Moldova, Republic of",Nisporeni,7
+Algeria,Bejaia,7
+Thailand,Chiang Mai,7
+"Iran, Islamic Republic of",Azarbayjan-e Gharbi,7
+Montenegro,Ulcinj,7
+Afghanistan,-,7
+Tunisia,Al Mahdia,7
+Guam,Tamuning-Tumon-Harmon Municipality,7
+Malaysia,Kelantan,7
+Algeria,Bouira,7
+India,Puducherry,7
+China,Hainan,7
+"Venezuela, Bolivarian Republic of",Vargas,7
+Guinea,Nzerekore,7
+Algeria,Oum el Bouaghi,7
+Colombia,"San Andres, Providencia y Santa Catalina",7
+Puerto Rico,Penuelas,7
+Uruguay,Tacuarembo,7
+Puerto Rico,Humacao,7
+Algeria,Chlef,7
+"Moldova, Republic of",Leova,7
+Iceland,Vestfirdir,7
+Ghana,Ashanti,7
+Japan,Gunma,7
+Kuwait,Al Ahmadi,7
+Japan,Fukushima,7
+China,Chongqing,7
+Puerto Rico,Catano,7
+Greece,Kavala,7
+Romania,-,7
+Montenegro,Herceg-Novi,7
+Central African Republic,Bangui,7
+Egypt,Ad Daqahliyah,7
+Cyprus,Ammochostos,7
+Gambia,Banjul,7
+Japan,Okayama,7
+Slovenia,Zuzemberk,7
+Russian Federation,Smolenskaya oblast',7
+Thailand,Samut Prakan,7
+Morocco,Chaouia-Ouardigha,7
+Greece,Khania,7
+Azerbaijan,Ucar,7
+Georgia,Mtskheta-Mtianeti,6
+Ghana,Brong-Ahafo,6
+Algeria,Ouargla,6
+El Salvador,La Paz,6
+Algeria,Mila,6
+Russian Federation,Arkhangel'skaya oblast',6
+Sri Lanka,Northern Province,6
+Greece,Ilia,6
+Sri Lanka,North Central Province,6
+Tajikistan,Tajikistan,6
+Greece,Xanthi,6
+Ghana,Eastern,6
+Greece,Trikala,6
+Japan,Kagawa,6
+Egypt,Al Iskandariyah,6
+Sierra Leone,Western Area,6
+Honduras,Choluteca,6
+Azerbaijan,Samaxi,6
+China,-,6
+China,Gansu,6
+French Guiana,Guyane,6
+"Macedonia, The Former Yugoslav Republic of",Kumanovo,6
+Slovenia,Miren-Kostanjevica,6
+Belgium,-,6
+Ukraine,Avtonomna Respublika Krym,6
+"Korea, Republic of",Jeonbuk,6
+Jamaica,Saint James,6
+Slovenia,Vipava,6
+Kazakhstan,Mangghystau oblysy,6
+Japan,Shiga,6
+Georgia,Imereti,6
+"Macedonia, The Former Yugoslav Republic of",Prilep,6
+Dominican Republic,Barahona,6
+Egypt,Al Gharbiyah,6
+Japan,Iwate,6
+Greece,Pieria,6
+Guyana,Demerara-Mahaica,6
+Latvia,Lubanas,6
+Latvia,Aglonas,6
+China,Ningxia,6
+Niger,Diffa,6
+Tonga,Tongatapu,6
+Trinidad and Tobago,Port-of-Spain,6
+Guatemala,Quetzaltenango,6
+Sao Tome and Principe,Sao Tome,6
+India,Goa,6
+Uruguay,Cerro Largo,6
+Cyprus,Keryneia,6
+Dominican Republic,Salcedo,6
+Puerto Rico,Hatillo,6
+"Iran, Islamic Republic of",Khorasan-e Jonubi,6
+Papua New Guinea,Northern,6
+Syrian Arab Republic,Al Ladhiqiyah,6
+Indonesia,Kalimantan Timur,6
+Cameroon,Sud-Ouest,6
+Croatia,-,6
+Saint Vincent and The Grenadines,Saint George,6
+Russian Federation,"Mariy El, Respublika",6
+Panama,Herrera,6
+"Moldova, Republic of",Briceni,6
+Grenada,Saint George,6
+Russian Federation,Penzenskaya oblast',6
+China,Yunnan,6
+Puerto Rico,Ponce,6
+Kyrgyzstan,Chu,6
+Spain,-,6
+"Tanzania, United Republic of",Dodoma,6
+"Iran, Islamic Republic of",Yazd,5
+Philippines,Surigao del Sur,5
+Latvia,Cesvaines,5
+Guinea-Bissau,Bissau,5
+China,Xinjiang,5
+Japan,Gifu,5
+China,Anhui,5
+Algeria,Djelfa,5
+Latvia,Alojas,5
+Ecuador,Cotopaxi,5
+Uruguay,Florida,5
+Japan,Nagasaki,5
+"Moldova, Republic of",Donduseni,5
+Greece,Lakonia,5
+"Palestine, State of",Gaza,5
+Philippines,Basilan,5
+Honduras,El Paraiso,5
+Puerto Rico,Carolina,5
+Saudi Arabia,Ha'il,5
+Guatemala,El Progreso,5
+Angola,Benguela,5
+Saudi Arabia,'Asir,5
+Kazakhstan,Ongtustik Qazaqstan oblysy,5
+Japan,Kumamoto,5
+Thailand,Songkhla,5
+Montenegro,Tivat,5
+Albania,Lezhe,5
+Russian Federation,Ul'yanovskaya oblast',5
+Thailand,Chumphon,5
+Egypt,Ash Sharqiyah,5
+Russian Federation,Vladimirskaya oblast',5
+Brazil,Acre,5
+Uruguay,San Jose,5
+Greenland,Kommune Kujalleq,5
+Thailand,Khon Kaen,5
+Puerto Rico,Canovanas,5
+Latvia,Skrundas,5
+Azerbaijan,Beylaqan,5
+Iceland,Nordurland vestra,5
+Russian Federation,Saratovskaya oblast',5
+Zambia,Copperbelt,5
+Madagascar,Antsiranana,5
+Japan,Fukui,5
+Thailand,Nakhon Pathom,5
+"Korea, Republic of",Busan,5
+Latvia,Aizputes,5
+"Palestine, State of",West Bank,5
+Japan,Akita,5
+Russian Federation,"Khakasiya, Respublika",5
+Andorra,La Massana,5
+Nicaragua,Granada,5
+Japan,Niigata,5
+"Tanzania, United Republic of",Pwani,5
+Latvia,Vecumnieku,5
+"Iran, Islamic Republic of",Semnan,5
+Egypt,Matruh,5
+Paraguay,Alto Parana,5
+"Moldova, Republic of",-,5
+Azerbaijan,Salyan,5
+Angola,Kwanza Norte,5
+Russian Federation,Belgorodskaya oblast',5
+"Venezuela, Bolivarian Republic of",Monagas,5
+Bahrain,Ash Shamaliyah,5
+Puerto Rico,Manati,5
+Albania,Kukes,5
+Liechtenstein,Schaan,5
+Dominican Republic,Samana,5
+Maldives,Maale,5
+Japan,Toyama,5
+Uzbekistan,Buxoro,4
+Oman,Ad Dakhiliyah,4
+Russian Federation,Kostromskaya oblast',4
+Congo,Pointe-Noire,4
+"Moldova, Republic of",Cantemir,4
+Algeria,Bordj Bou Arreridj,4
+Japan,Ishikawa,4
+"Macedonia, The Former Yugoslav Republic of",Ohrid,4
+"Moldova, Republic of",Stefan Voda,4
+Tunisia,Bajah,4
+Thailand,Pattani,4
+Greece,Larisa,4
+Tunisia,Tozeur,4
+Algeria,Msila,4
+Ethiopia,Oromiya,4
+Mauritius,Port Louis,4
+Russian Federation,"Komi, Respublika",4
+Ecuador,Bolivar,4
+Philippines,-,4
+Egypt,Al Ismailiyah,4
+Greece,Kozani,4
+"Iran, Islamic Republic of",Gilan,4
+Nigeria,Rivers,4
+Indonesia,Sumatera Barat,4
+India,Daman and Diu,4
+Austria,-,4
+Greece,Rethimni,4
+Algeria,Sidi Bel Abbes,4
+Papua New Guinea,Morobe,4
+"Korea, Republic of",Chungbuk,4
+Colombia,-,4
+Japan,Wakayama,4
+Guam,Hagatna Municipality,4
+Russian Federation,Stavropol'skiy kray,4
+Greece,Rodhopi,4
+Namibia,Erongo,4
+Greece,Lesvos,4
+Indonesia,Sumatera Selatan,4
+Puerto Rico,Trujillo Alto,4
+Greece,Serrai,4
+Slovenia,Muta,4
+Slovenia,Borovnica,4
+Russian Federation,Bryanskaya oblast',4
+Thailand,Prachuap Khiri Khan,4
+Philippines,Nueva Vizcaya,4
+Japan,Kochi,4
+Guam,Dededo Municipality,4
+Chad,Logone-Occidental,4
+"Korea, Republic of",Ulsan,4
+Comoros,Grande Comore,4
+Armenia,Sirak,4
+"Macedonia, The Former Yugoslav Republic of",Tearce,4
+Slovenia,Sezana,4
+Mauritius,Riviere du Rempart,4
+Uruguay,Lavalleja,4
+Saudi Arabia,Al Qasim,4
+Greece,Khalkidhiki,4
+Puerto Rico,Lajas,4
+China,Xizang,4
+Suriname,-,4
+Kenya,Nyanza,4
+Lao People's Democratic Republic,Xaignabouli,4
+Iceland,-,4
+Morocco,Tadla-Azilal,4
+"Tanzania, United Republic of",Arusha,4
+Japan,Saga,4
+Thailand,Nan,4
+Mozambique,Cabo Delgado,4
+Nauru,Yaren,4
+Greenland,Qeqqata Kommunia,4
+Puerto Rico,Vega Baja,4
+Timor-Leste,Dili,4
+"Korea, Republic of",Daejeon,4
+Russian Federation,Altayskiy kray,4
+Jordan,Irbid,4
+Guinea,Conakry,4
+China,Jilin,4
+Russian Federation,Orlovskaya oblast',4
+Puerto Rico,Luquillo,4
+India,Dadra and Nagar Haveli,4
+Japan,Shimane,4
+Lao People's Democratic Republic,Champasak,4
+Algeria,Souk Ahras,4
+"Macedonia, The Former Yugoslav Republic of",Lipkovo,4
+Dominican Republic,Valverde,4
+Russian Federation,Tverskaya oblast',4
+New Zealand,-,3
+Greece,Evvoia,3
+"Tanzania, United Republic of",Mjini Magharibi,3
+Puerto Rico,Corozal,3
+Thailand,Nong Khai,3
+Jamaica,Saint Catherine,3
+Trinidad and Tobago,Arima,3
+Guinea,Beyla,3
+"Tanzania, United Republic of",Mtwara,3
+Andorra,Canillo,3
+Puerto Rico,Toa Alta,3
+Cambodia,Kampong Chhnang,3
+"Korea, Republic of",Gangwon,3
+Malaysia,Terengganu,3
+Kuwait,Al Jahra,3
+Kazakhstan,Pavlodar oblysy,3
+Thailand,Sakon Nakhon,3
+Thailand,Suphan Buri,3
+Algeria,Skikda,3
+Zimbabwe,Mashonaland East,3
+Saint Lucia,Castries,3
+Turks and Caicos Islands,Turks and Caicos Islands,3
+Ecuador,Sucumbios,3
+Liechtenstein,Balzers,3
+Georgia,Samegrelo and Zemo Svaneti,3
+Dominican Republic,Dajabon,3
+El Salvador,Sonsonate,3
+Namibia,Otjozondjupa,3
+Azerbaijan,Quba,3
+"Korea, Republic of",Jeonnam,3
+Puerto Rico,Isabela,3
+Indonesia,Kepulauan Riau,3
+Dominican Republic,Monte Cristi,3
+Russian Federation,Udmurtskaya Respublika,3
+Montenegro,Cetinje,3
+Madagascar,Fianarantsoa,3
+"Venezuela, Bolivarian Republic of",Delta Amacuro,3
+Russian Federation,Ivanovskaya oblast',3
+Cameroon,Sud,3
+Samoa,A'ana,3
+Liechtenstein,Triesen,3
+Georgia,Abkhazia,3
+"Iran, Islamic Republic of",Hamadan,3
+Thailand,Buri Ram,3
+Thailand,Chiang Rai,3
+Uruguay,Durazno,3
+Philippines,Aurora,3
+Botswana,Central,3
+Greece,Evros,3
+China,Nei Mongol,3
+Kenya,Eastern,3
+Greece,Khios,3
+"Venezuela, Bolivarian Republic of",Merida,3
+Malaysia,Melaka,3
+China,Guizhou,3
+Thailand,Lamphun,3
+Guam,Mangilao Municipality,3
+Thailand,Phetchabun,3
+Greece,Arta,3
+Slovenia,Mezica,3
+Thailand,Phitsanulok,3
+"Iran, Islamic Republic of",Zanjan,3
+Japan,Tokushima,3
+Tunisia,Siliana,3
+Oman,Shamal al Batinah,3
+Haiti,Nord-Est,3
+Japan,Aomori,3
+Japan,Tottori,3
+Guam,Santa Rita Municipality,3
+Thailand,Ranong,3
+Paraguay,Boqueron,3
+Cambodia,Baat Dambang,3
+Ecuador,Morona-Santiago,3
+"Macedonia, The Former Yugoslav Republic of",Kicevo,3
+Thailand,Ratchaburi,3
+India,Sikkim,3
+Panama,Veraguas,3
+Azerbaijan,Ganca,3
+Malaysia,Negeri Sembilan,3
+Russian Federation,"Kareliya, Respublika",3
+Guatemala,Quiche,3
+Lao People's Democratic Republic,Louangphabang,3
+Chile,-,3
+Algeria,Tiaret,3
+Algeria,Tlemcen,3
+Indonesia,Lampung,3
+"Venezuela, Bolivarian Republic of",Guarico,3
+Japan,Yamaguchi,3
+Armenia,Armavir,3
+Indonesia,Kalimantan Selatan,3
+Syrian Arab Republic,Hims,3
+Azerbaijan,Abseron,3
+Bhutan,Thimphu,3
+Jordan,Az Zarqa',3
+Angola,Cabinda,3
+Russian Federation,Kaluzhskaya oblast',3
+Kenya,-,3
+"Venezuela, Bolivarian Republic of",Barinas,3
+Latvia,Baltinavas,3
+Puerto Rico,Toa Baja,3
+Armenia,Tavus,3
+"Macedonia, The Former Yugoslav Republic of",Bogovinje,3
+Afghanistan,Herat,3
+"Virgin Islands, U.S.",Virgin Islands,3
+Algeria,Mostaganem,3
+Uruguay,Rivera,3
+Pakistan,-,3
+Russian Federation,Kurskaya oblast',3
+"Macedonia, The Former Yugoslav Republic of",Gevgelija,3
+Greece,Fthiotis,3
+Norway,-,3
+Georgia,Ajaria,3
+Mozambique,Niassa,3
+Algeria,Ain Temouchent,3
+Greece,Argolis,2
+Honduras,Lempira,2
+Nepal,Narayani,2
+Dominica,Saint George,2
+Puerto Rico,Rio Grande,2
+Puerto Rico,Florida,2
+Gabon,Moyen-Ogooue,2
+Slovenia,Odranci,2
+Puerto Rico,Guaynabo,2
+Indonesia,Kalimantan Tengah,2
+Solomon Islands,Guadalcanal,2
+Cook Islands,Cook Islands,2
+Japan,Ehime,2
+Algeria,Biskra,2
+Egypt,Bur Sa'id,2
+Liechtenstein,Planken,2
+Sri Lanka,Uva Province,2
+Costa Rica,-,2
+Algeria,Naama,2
+Guatemala,Suchitepequez,2
+Antigua and Barbuda,Saint John,2
+Uganda,Tororo,2
+Armenia,Ararat,2
+Suriname,Nickerie,2
+"Macedonia, The Former Yugoslav Republic of",Aracinovo,2
+Liberia,Margibi,2
+"Macedonia, The Former Yugoslav Republic of",Veles,2
+Armenia,Lori,2
+Algeria,Guelma,2
+Russian Federation,Pskovskaya oblast',2
+Philippines,Romblon,2
+Mexico,-,2
+Dominican Republic,Sanchez Ramirez,2
+Puerto Rico,Gurabo,2
+Papua New Guinea,Western Highlands,2
+Indonesia,Sulawesi Selatan,2
+"Venezuela, Bolivarian Republic of",Portuguesa,2
+Cambodia,Prey Veaeng,2
+"Korea, Republic of",Gwangju,2
+Ghana,Western,2
+Dominican Republic,Baoruco,2
+Sint Maarten (Dutch Part),Sint Maarten,2
+Tunisia,Gabes,2
+Thailand,Phrae,2
+Barbados,Saint James,2
+Montenegro,Mojkovac,2
+Japan,Yamanashi,2
+Kuwait,Mubarak al Kabir,2
+India,Meghalaya,2
+Indonesia,Jambi,2
+Tunisia,Tataouine,2
+Lebanon,Liban-Nord,2
+Algeria,Laghouat,2
+Uruguay,Rio Negro,2
+Bangladesh,Rangpur,2
+Guatemala,Huehuetenango,2
+India,Arunachal Pradesh,2
+Malawi,Lilongwe,2
+"Macedonia, The Former Yugoslav Republic of",Tetovo,2
+"Moldova, Republic of",Soldanesti,2
+Somalia,Woqooyi Galbeed,2
+Nigeria,Imo,2
+Russian Federation,Amurskaya oblast',2
+Fiji,Western,2
+India,Nagaland,2
+Thailand,Prachin Buri,2
+Japan,Yamagata,2
+Namibia,Oshikoto,2
+Cambodia,Kandaal,2
+"Moldova, Republic of",Basarabeasca,2
+Puerto Rico,Aguada,2
+Belarus,Homyel'skaya Voblasts',2
+Armenia,Gegark'unik',2
+"Iran, Islamic Republic of",Ardabil,2
+Albania,Shkoder,2
+Russian Federation,Orenburgskaya oblast',2
+"Korea, Republic of",Jeju,2
+Cambodia,Siem Reab,2
+Indonesia,Maluku Utara,2
+Thailand,Phra Nakhon Si Ayutthaya,2
+Saudi Arabia,Al Jawf,2
+Papua New Guinea,Enga,2
+Saudi Arabia,Tabuk,2
+Suriname,Wanica,2
+Namibia,Zambezi,2
+"Macedonia, The Former Yugoslav Republic of",Valandovo,2
+Thailand,Sing Buri,2
+Peru,Madre de Dios,2
+Egypt,Kafr ash Shaykh,2
+"Venezuela, Bolivarian Republic of",Sucre,2
+Algeria,Saida,2
+Morocco,Guelmim-Es Semara,2
+"Iran, Islamic Republic of",Sistan va Baluchestan,2
+Tunisia,Gafsa,2
+Syrian Arab Republic,Hamah,2
+Portugal,-,2
+Mauritius,Pamplemousses,2
+Slovenia,Oplotnica,2
+Tunisia,Bizerte,2
+"Macedonia, The Former Yugoslav Republic of",Brvenica,2
+Kenya,Central,2
+Nicaragua,Masaya,2
+"Macedonia, The Former Yugoslav Republic of",Kavadarci,2
+Pakistan,Balochistan,2
+Greece,Arkadhia,2
+Greece,Levkas,2
+Puerto Rico,Maricao,2
+Azerbaijan,Mingacevir,2
+Holy See,Vatican City,2
+Azerbaijan,Qazax,2
+Uganda,Kiryandongo,2
+Egypt,Al Buhayrah,2
+Lao People's Democratic Republic,Khammouan,2
+Puerto Rico,Camuy,2
+Thailand,Lop Buri,2
+Thailand,Maha Sarakham,2
+Chad,Chari-Baguirmi,2
+Brazil,Roraima,2
+Ethiopia,YeDebub Biheroch Bihereseboch na Hizboch,2
+Equatorial Guinea,Bioko Norte,2
+Kenya,Rift Valley,2
+Japan,Oita,2
+Algeria,Medea,2
+Peru,Amazonas,2
+Japan,Kagoshima,2
+Greece,Samos,2
+Grenada,Saint David,2
+Thailand,Chanthaburi,2
+Thailand,Ubon Ratchathani,2
+Ireland,-,2
+Trinidad and Tobago,San Fernando,2
+"Tanzania, United Republic of",Kaskazini Unguja,2
+Tunisia,Sidi Bou Zid,2
+Algeria,Bechar,2
+Afghanistan,Nangarhar,2
+Thailand,Udon Thani,2
+"Moldova, Republic of",Taraclia,2
+Honduras,Olancho,2
+Kazakhstan,Atyrau oblysy,2
+Lao People's Democratic Republic,Attapu,2
+Lesotho,Leribe,2
+Puerto Rico,Quebradillas,2
+Qatar,Al Khawr wa adh Dhakhirah,2
+"Korea, Republic of",Daegu,2
+Greece,Aitolia kai Akarnania,2
+"Iran, Islamic Republic of",Qazvin,2
+"Congo, The Democratic Republic of The",Nord-Kivu,1
+Namibia,Hardap,1
+Nicaragua,Carazo,1
+Guyana,Essequibo Islands-West Demerara,1
+Puerto Rico,Hormigueros,1
+Greece,Fokis,1
+"Korea, Republic of",-,1
+Saint Lucia,Laborie,1
+Faroe Islands,Suduroy,1
+Philippines,Antique,1
+Syrian Arab Republic,Halab,1
+Uzbekistan,Namangan,1
+Puerto Rico,Morovis,1
+Ghana,Central,1
+Thailand,Kalasin,1
+Kazakhstan,Batys Qazaqstan oblysy,1
+Russian Federation,Kurganskaya oblast',1
+Thailand,Surin,1
+Algeria,El Oued,1
+Greece,Zakinthos,1
+Guyana,Mahaica-Berbice,1
+Algeria,Tebessa,1
+"Macedonia, The Former Yugoslav Republic of",Struga,1
+Myanmar,Mandalay,1
+Bahamas,Rock Sound,1
+Russian Federation,Chuvashskaya Respublika,1
+Bahamas,Freeport,1
+Afghanistan,Balkh,1
+French Polynesia,Iles Sous-le-Vent,1
+"Venezuela, Bolivarian Republic of",Trujillo,1
+Sudan,Gedaref,1
+Puerto Rico,Rincon,1
+Grenada,Saint John,1
+Estonia,-,1
+India,Mizoram,1
+China,Heilongjiang,1
+Pakistan,Federally Administered Tribal Areas,1
+El Salvador,Chalatenango,1
+Russian Federation,Kirovskaya oblast',1
+Thailand,Phayao,1
+"Tanzania, United Republic of",Kilimanjaro,1
+Ethiopia,Sumale,1
+Slovenia,Mislinja,1
+Jordan,Al 'Aqabah,1
+Kazakhstan,Aqtobe oblysy,1
+Thailand,Trang,1
+Belize,Cayo,1
+Saint Kitts and Nevis,Saint George Basseterre,1
+Thailand,Phangnga,1
+"Macedonia, The Former Yugoslav Republic of",Novo Selo,1
+Algeria,Illizi,1
+Japan,Miyazaki,1
+Greece,Kardhitsa,1
+Kazakhstan,Shyghys Qazaqstan oblysy,1
+Uruguay,Treinta y Tres,1
+Nigeria,Anambra,1
+China,Qinghai,1
+Tajikistan,Sughd,1
+Nicaragua,Rivas,1
+Rwanda,Sud,1
+Jamaica,Saint Ann,1
+Belarus,Mahilyowskaya Voblasts',1
+INVALID IP ADDRESS,INVALID IP ADDRESS,1
+Latvia,Ropazu,1
+Barbados,Christ Church,1
+Egypt,Al Bahr al Ahmar,1
+Zimbabwe,Matabeleland North,1
+El Salvador,Morazan,1
+Wallis and Futuna,Wallis and Futuna Islands,1
+Thailand,Samut Songkhram,1
+Egypt,Al Minya,1
+Kazakhstan,Almaty oblysy,1
+Slovenia,-,1
+Thailand,Lampang,1
+Libya,-,1
+Lebanon,Liban-Sud,1
+Dominican Republic,Santiago Rodriguez,1
+Cameroon,Extreme-Nord,1
+Paraguay,Amambay,1
+Qatar,Az Za'ayin,1
+Russian Federation,Zabaykal'skiy kray,1
+Russian Federation,"Buryatiya, Respublika",1
+Thailand,Uttaradit,1
+Russian Federation,"Severnaya Osetiya-Alaniya, Respublika",1
+Nigeria,Oyo,1
+Thailand,Nakhon Phanom,1
+Vanuatu,Shefa,1
+Iraq,Karbala',1
+Qatar,Umm Salal,1
+Somalia,Jubbada Hoose,1
+"Iran, Islamic Republic of",Kermanshah,1
+Nepal,Kosi,1
+Mayotte,Mamoudzou,1
+"Macedonia, The Former Yugoslav Republic of",Negotino,1
+"Venezuela, Bolivarian Republic of",Apure,1
+Canada,-,1
+Tunisia,Kairouan,1
+Honduras,Ocotepeque,1
+Thailand,Nakhon Si Thammarat,1
+Botswana,North-East,1
+Guatemala,Alta Verapaz,1
+Thailand,Kamphaeng Phet,1
+Albania,Korce,1
+Dominica,Saint John,1
+Uzbekistan,Xorazm,1
+Indonesia,Aceh,1
+Philippines,Mindoro Occidental,1
+Finland,-,1
+Jordan,Al Mafraq,1
+Burkina Faso,Boulkiemde,1
+Nigeria,Delta,1
+Russian Federation,"Dagestan, Respublika",1
+Ecuador,Orellana,1
+Angola,Bie,1
+New Caledonia,Province Nord,1
+Paraguay,Cordillera,1
+Russian Federation,Khanty-Mansiyskiy avtonomnyy okrug-Yugra,1
+Rwanda,Nord,1
+Russian Federation,Chechenskaya Respublika,1
+Thailand,Kanchanaburi,1
+Russian Federation,"Mordoviya, Respublika",1
+"Macedonia, The Former Yugoslav Republic of",Kocani,1
+Algeria,Khenchela,1
+Sierra Leone,Eastern,1
+Puerto Rico,Anasco,1
+Ecuador,Canar,1
+Faroe Islands,Nordoyar,1
+Dominican Republic,Elias Pina,1
+"Bonaire, Sint Eustatius and Saba",Saba,1
+Benin,Oueme,1
+Afghanistan,Kunar,1
+Greece,-,1
+Thailand,Krabi,1
+Russian Federation,Vologodskaya oblast',1
+Thailand,Saraburi,1
+Liechtenstein,Schellenberg,1
+Nicaragua,Atlantico Sur,1
+"Macedonia, The Former Yugoslav Republic of",Sveti Nikole,1
+Saudi Arabia,Al Bahah,1
+Cambodia,Kaoh Kong,1
+Nigeria,Ogun,1
+Algeria,El Bayadh,1
+Namibia,Omusati,1
+Syrian Arab Republic,Dar'a,1
+Thailand,Ang Thong,1
+Georgia,Shida Kartli,1
+Greece,Kikladhes,1
+Cambodia,Krong Preah Sihanouk,1
+Uzbekistan,Qashqadaryo,1
+Azerbaijan,Qabala,1
+Algeria,El Tarf,1
+Cambodia,Kampong Chaam,1
+Egypt,Bani Suwayf,1
+Cambodia,Kampong Spueu,1
+Saint Martin (French Part),Saint Martin,1
+Belarus,Vitsyebskaya Voblasts',1
+Iraq,Babil,1
+Uganda,Buliisa,1
+Puerto Rico,Cidra,1
+Malaysia,Perlis,1
+Indonesia,Sulawesi Tenggara,1
+"Venezuela, Bolivarian Republic of",Cojedes,1
+Puerto Rico,Mayaguez,1
+Burkina Faso,Kenedougou,1
+Guatemala,Chimaltenango,1
+Thailand,Phichit,1
+Malaysia,Wilayah Persekutuan Putrajaya,1
+Panama,Los Santos,1
+Afghanistan,Faryab,1
+Libya,Al Jufrah,1
+Panama,Bocas del Toro,1
+"Tanzania, United Republic of",Kagera,1
+Sao Tome and Principe,Principe,1
+Lebanon,Beqaa,1
+Puerto Rico,Municipio de Juncos,1
+Puerto Rico,Cabo Rojo,1
+"Tanzania, United Republic of",Mwanza,1
+Niger,Zinder,1
+Montenegro,-,1
+"Macedonia, The Former Yugoslav Republic of",Vrapciste,1
+Barbados,Saint Peter,1
+Ukraine,-,1
+Saudi Arabia,Al Hudud ash Shamaliyah,1
+Maldives,Laamu,1
+Angola,Namibe,1
+Armenia,Kotayk',1
+Indonesia,Nusa Tenggara Barat,1
+Haiti,Nord,1
+Liechtenstein,Gamprin,1
+Ecuador,Galapagos,1
+Greece,Imathia,1
+Angola,Kwanza Sul,1
+Anguilla,Anguilla,1
+Latvia,Brocenu,1
+Kazakhstan,Qostanay oblysy,1
+Burkina Faso,Houet,1
+Nepal,Rapti,1
+Puerto Rico,Las Piedras,1
+Belarus,Hrodzyenskaya Voblasts',1
+Montenegro,Danilovgrad,1
+Kazakhstan,Zhambyl oblysy,1
+Senegal,Thies,1
+Dominica,Saint Paul,1
+Maldives,Gaafu Dhaalu,1
+Cambodia,Mondol Kiri,1
+Azerbaijan,Masalli,1
+Somalia,-,1
+Russian Federation,"Kalmykiya, Respublika",1
+Puerto Rico,Comerio,1
+Maldives,Noonu,1
+Brunei Darussalam,Tutong,1
+Greece,Grevena,1
+Angola,Malange,1
+Uganda,Masaka,1
+Philippines,Mindoro Oriental,1
+Cambodia,Stueng Traeng,1
+Puerto Rico,Juana Diaz,1
+Angola,Uige,1
+Thailand,Narathiwat,1
+Suriname,Saramacca,1
