@@ -33,6 +33,7 @@
       - [**3. Mapping data to create glamira mart layer for visualizing**](#3-mapping-data-to-create-glamira-mart-layer-for-visualizing)
       - [**4. Data Visualization**](#4-data-visualization)
   - [📝 How to set up and run](#-how-to-set-up-and-run)
+  - [🚀 Future Enhancements](#-future-enhancements)
 
 
 ## Data Collection & Storage Foundation
@@ -289,3 +290,10 @@ dec_project2:
 11. Change keyfile, project in `profiles.yml`
 12. Run respectively models: staging_layer, analysis_layer, mart_layer by using `dbt run --select <model_name>`
 13. Visit to Looker Studio create DashBoard
+
+## 🚀 Future Enhancements
+- The product information scraping can be improved to reduce time:
+  - Option 1: In the step `merge pid and url from filters`, all parameters after "?" can be removed and add to set() to get unique pid and urls. For example: "www.abc.com/product1?metal=gold&color=yellow" become "www.abc.com/product1", leading to a significant reduction in the number of urls to be crawled
+  - Option 2: Use catalog to crawl data.
+    - ```https://www.glamira.{suffix}/catalog/product/view/id/{productid}```
+    - ```https://www.ring-paare.de/catalog/product/view/id/{productid}```. After exploring, all products from ring-paare source come with "de" suffix
