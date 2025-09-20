@@ -1,4 +1,4 @@
-from yaml_config import load_config
+from src.data_enrichment.location_enrichment.yaml_config import load_config
 from pymongo import MongoClient
 from tqdm import tqdm
 import os
