@@ -191,6 +191,8 @@ Based on the data from DATA COLLECTION part
   - str with bool will also be str
   - list with dict str will be list
   - dict and flat value, it should be dict and format for those with flat value as dict
+  - Reference 1: [Use nested and repeated fields](https://cloud.google.com/bigquery/docs/best-practices-performance-nested)
+  - Reference 2: [Specifying a schema](https://cloud.google.com/bigquery/docs/schemas)
 - Upload data from GCS with the built schemas
 
 ## Data Transformation & Visualization
@@ -223,7 +225,7 @@ Based on the data in Bigquery raw_layer
   - [BigQuery setup | dbt Developer Hub](https://docs.getdbt.com/docs/core/connect-data-platform/bigquery-setup)
   - [How to Install DBT and Set Up a Project, Create Your First dbt Model](https://www.youtube.com/watch?v=1fY1A8SRflI&list=PLmjYN_euFZ0Ye73B_m87guD5amkQB37BL&index=2)
   - [Setup local dbt development environment with dbt-core and VSCode](https://www.youtube.com/watch?v=1fY1A8SRflI&list=PLmjYN_euFZ0Ye73B_m87guD5amkQB37BL&index=2)
-
+  - [DBT Guides](https://docs.getdbt.com/guides)
 
 **3. VS Code**
 - Open your project folder
