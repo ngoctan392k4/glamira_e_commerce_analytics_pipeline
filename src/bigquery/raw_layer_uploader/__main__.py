@@ -63,7 +63,7 @@ if __name__ == "__main__":
     logging.info(f"Creating dataset and table")
     create_dataset_table(schema=schema, project_id="glamira-project-464503", dataset_id="raw_glamira", table_id="raw_product_data")
     logging.info(f"Loading to bigquery")
-    load_bigquery(schema=schema, project_id="glamira-project-464503", dataset_id="raw_glamira", table_id="raw_product_data", gcs_bucket="glamira-project", gcs_object="ip_location_data.jsonl")
+    load_bigquery(schema=schema, project_id="glamira-project-464503", dataset_id="raw_glamira", table_id="raw_product_data", gcs_bucket="glamira-project", gcs_object="product_info.jsonl")
 
     logging.info(f"Uploading location data")
     logging.info(f"Building schema")
