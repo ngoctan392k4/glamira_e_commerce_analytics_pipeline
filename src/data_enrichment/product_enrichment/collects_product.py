@@ -163,7 +163,9 @@ async def process_pid(error_queue, item, session):
     for tag, url_list in tag_to_urls.items():
         data = await process_tag_product(error_queue, pid, tag, url_list, session)
         if data:
-            result[tag] = data
+            # result[tag] = data
+            result["suffix"] = tag
+            result.update(data)
     return result if len(result) > 1 else None
 
 

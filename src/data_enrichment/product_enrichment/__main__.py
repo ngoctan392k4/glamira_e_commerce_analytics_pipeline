@@ -38,10 +38,10 @@ if __name__ == "__main__":
     except Exception as e:
         logging.exception(f"Error when uploading product information into MongoDB")
 
-    try:
-        re_process_product_data()
-    except Exception as e:
-        logging.exception(f"Error when re processing product information")
+    # try:
+    #     re_process_product_data()
+    # except Exception as e:
+    #     logging.exception(f"Error when re processing product information")
 
     end_time = time.time()
     logging.info(f"Completed product enrichment in {end_time - start_time:.2f} seconds")
