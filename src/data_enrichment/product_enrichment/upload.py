@@ -11,7 +11,7 @@ def upload_product_data():
 
     client = MongoClient(url, serverSelectionTimeoutMS=30000)
     database = client['glamira']
-    collection = database['product_data']
+    collection = database['product_info']
 
     folder_path = "data/product_detail_v2"
     file_list = [f for f in os.listdir(folder_path) if f.endswith(".json")]
