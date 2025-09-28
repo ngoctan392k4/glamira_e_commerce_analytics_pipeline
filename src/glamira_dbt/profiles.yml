@@ -4,7 +4,7 @@ glamira_dbt:
       dataset: glamira_staging
       job_execution_timeout_seconds: 300
       job_retries: 1
-      keyfile: E:\workspace\glamira_project_gcp_data_pipeline\ngoctan_owner.json
+      keyfile: E:\workspace\glamira_e_commerce_analytics_pipeline\ngoctan_owner.json
       location: US
       method: service-account
       priority: interactive
