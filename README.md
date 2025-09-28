@@ -21,17 +21,11 @@
     - [📝 Tasks](#-tasks-1)
       - [**1. Export crawled data and raw behaviour data into GCS**](#1-export-crawled-data-and-raw-behaviour-data-into-gcs)
       - [**2. Load data from GCS to Bigquery**](#2-load-data-from-gcs-to-bigquery)
-  - [Data Transformation \& Visualization](#data-transformation--visualization)
+  - [Visualization](#visualization)
     - [❓ Problem Description](#-problem-description-2)
     - [🎯 Learning Objectives](#-learning-objectives-2)
-    - [📋 Preparation](#-preparation-1)
-      - [**dbt Setup**](#dbt-setup)
     - [📝 Tasks](#-tasks-2)
-      - [**1. Data modeling**](#1-data-modeling)
-      - [**2. Transform data in raw layer into staging layer**](#2-transform-data-in-raw-layer-into-staging-layer)
-      - [**3. Transform data in staging layer into analysis layer**](#3-transform-data-in-staging-layer-into-analysis-layer)
-      - [**3. Mapping data to create glamira mart layer for visualizing**](#3-mapping-data-to-create-glamira-mart-layer-for-visualizing)
-      - [**4. Data Visualization**](#4-data-visualization)
+      - [**Data Visualization**](#data-visualization)
   - [📝 How to set up and run](#-how-to-set-up-and-run)
   - [🚀 Future Enhancements](#-future-enhancements)
 
@@ -195,83 +189,18 @@ Based on the data from DATA COLLECTION part
   - Reference 2: [Specifying a schema](https://cloud.google.com/bigquery/docs/schemas)
 - Upload data from GCS with the built schemas
 
-## Data Transformation & Visualization
+## Visualization
 
 ### ❓ Problem Description
-Based on the data in Bigquery raw_layer
-- Transform data by using **dbt tools**
-- Data modeling with dimension_tables creation, fact_table creation
-- Including 2 layer for cleaning, normalizing data: staging layer and analysis layer
 - Build Dashboard to visualize for analyzing sale performance
 
 ### 🎯 Learning Objectives
-- Understanding dimensional modeling
-- Working with dbt
 - Creating effective visualizations
 - Business metrics analysis
 
-### 📋 Preparation
-
-#### **dbt Setup**
-**1. BigQuery**
-- Go to https://console.cloud.google.com/, create a project (if you do not have)
-- Create a **Service Account** in your project, grant `BigQuery Admin` role for this Service Account
-- Add key as Json and download key file
-
-**2. dbt**
-- Install VS Code
-- Install all necessary dbt libraries in `requirements.txt` by yourself and refer to these links and videos
-
-  - [BigQuery setup | dbt Developer Hub](https://docs.getdbt.com/docs/core/connect-data-platform/bigquery-setup)
-  - [How to Install DBT and Set Up a Project, Create Your First dbt Model](https://www.youtube.com/watch?v=1fY1A8SRflI&list=PLmjYN_euFZ0Ye73B_m87guD5amkQB37BL&index=2)
-  - [Setup local dbt development environment with dbt-core and VSCode](https://www.youtube.com/watch?v=1fY1A8SRflI&list=PLmjYN_euFZ0Ye73B_m87guD5amkQB37BL&index=2)
-  - [DBT Guides](https://docs.getdbt.com/guides)
-
-**3. VS Code**
-- Open your project folder
-- Install `dbt Power User` extension
-- config your `profile.yml` file similar to this
-```
-dec_project2:
-  outputs:
-    dev:
-      dataset: --Name-of-your-dataset
-      job_execution_timeout_seconds: 300
-      job_retries: 1
-      keyfile: Path-to-your-service-account-file
-      location: US
-      method: service-account
-      priority: interactive
-      project: --Your-project-id
-      threads: 4
-      type: bigquery
-  target: dev
-```
-- Install virtual environment
-- Install suitable Python libraries
-- Install dbt libraries
 
 ### 📝 Tasks
-#### **1. Data modeling**
-<img src="./assets/data_modeling.png" alt="Dim - Fact Model" width="700"/>
-
-#### **2. Transform data in raw layer into staging layer**
-- Based on option.option_label = 'alloy', extract metal code and color code
-  - Color code: all characters before "-"
-  - Metal code: all characters after "-"
-- Since products are crawled with various suffix (country - language)
-  - 1st priority: english_product_name (price contains "$")
-  - 2nd priority: other_latin_product_name (name with only latin characters)
-  - With remaining products, pick randomly one domain
-- With stg_fact_sales
-  - Either column alloy or column color contain color_id and metal_id, so we need to check both. If it is not null and exists in stg_dim_color/ metal, so we include it
-  - Getting exchange rate to ensure that all price is in the same format ($)
-#### **3. Transform data in staging layer into analysis layer**
-- Create file `generate_schema_name.sql` in macros to avoid concatenating dataset names
-- Transform data in staging layer in order to ensure they are same with data model
-#### **3. Mapping data to create glamira mart layer for visualizing**
-- Queries and create table in mart_layer for later visualization on Looker
-#### **4. Data Visualization**
+#### **Data Visualization**
 - Use data in mart_layer and visualize on Looker
 - Demo: [Sale Performance Dashboard](https://lookerstudio.google.com/reporting/5c99f51b-b618-4daf-a233-fcca44778e84)<br/>
 <img src="./assets/sale_performance_demo.png" alt="Sale performance demo" width="700"/>
