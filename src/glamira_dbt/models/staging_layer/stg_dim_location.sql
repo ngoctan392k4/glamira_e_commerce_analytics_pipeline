@@ -1,7 +1,3 @@
-{{ config(
-    materialized='table'
-) }}
-
 WITH dim_location_source AS (
     SELECT *
     FROM {{source('glamira_src', 'raw_ip_location')}}

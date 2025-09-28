@@ -1,7 +1,3 @@
-{{ config(
-    materialized='table'
-) }}
-
 WITH dim_customer_source AS (
     SELECT *
     FROM {{source('glamira_src', 'raw_glamira_behaviour')}}

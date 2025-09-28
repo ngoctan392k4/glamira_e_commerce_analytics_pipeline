@@ -1,7 +1,3 @@
-{{ config(
-    materialized='table'
-) }}
-
 WITH english_product_name AS (
   SELECT
       product_id,

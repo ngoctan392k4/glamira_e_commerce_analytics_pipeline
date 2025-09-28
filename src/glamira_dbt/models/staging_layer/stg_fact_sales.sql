@@ -1,7 +1,3 @@
-{{ config(
-    materialized='table'
-) }}
-
 WITH fact_sale_source AS (
     SELECT *
     FROM {{ source('glamira_src', 'raw_glamira_behaviour') }}
