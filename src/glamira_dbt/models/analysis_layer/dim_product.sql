@@ -11,7 +11,7 @@ WITH product_source AS (
 
 
 SELECT
-  ps.product_id,
+  CAST(ps.product_id AS INTEGER) AS product_id,
   ps.suffix,
   ps.product_name,
   ps.sku,
@@ -29,7 +29,7 @@ FROM product_source ps
 UNION ALL
 
 SELECT
-  '-1' AS product_id,
+  -1 AS product_id,
   'Not Defined' AS suffix,
   'Not Defined' AS product_name,
   'Not Defined' AS sku,
