@@ -72,3 +72,6 @@ dec_project2:
 - Transform data in staging layer in order to ensure they are same with data model
 #### **3. Mapping data to create glamira mart layer for visualizing**
 - Queries and create table in mart_layer for later visualization on Looker
+
+### 🖼 Data Lineage dbt flow
+<img src="../../assets/data_lineage_dbt_flow.png" alt="Data Lineage dbt flow" width="900"/>
