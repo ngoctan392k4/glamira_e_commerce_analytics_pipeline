@@ -1,7 +1,7 @@
 [project]
 name = "glamira-e-commerce-analytics-pipeline"
 version = "0.1.0"
-description = ""
+description = "Data pipeline is used for analyzing e-commerce sales performance including integrating user behavior, product data, and geolocation data; loading into Google Cloud Storage and BigQuery; applying star schema modeling with dbt."
 authors = [
     {name = " Tan, Huynh Nguyen Ngoc",email = "ngoctan300904@gmail.com"}
 ]
