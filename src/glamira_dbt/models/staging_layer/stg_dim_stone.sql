@@ -1,7 +1,3 @@
-{{ config(
-    materialized='table'
-) }}
-
 WITH dim_stone_source AS (
     SELECT *
     FROM {{ ref("stg_dim_product") }}
@@ -15,7 +11,7 @@ stone AS (
 ),
 
 data_stone AS (
-    SELECT
+    SELECT DISTINCT
         FARM_FINGERPRINT(st.option_id || '-' || st.option_type_id) AS stone_id,
         st.option_id,
         st.option_type_id,
