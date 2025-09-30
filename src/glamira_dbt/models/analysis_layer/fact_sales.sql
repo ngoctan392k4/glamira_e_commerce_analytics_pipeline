@@ -1,7 +1,7 @@
 {{ config(
     schema='glamira_analysis',
     alias='fact_sales',
-    materialized='table'
+    materialized='incremental'
 ) }}
 
 WITH fact_source AS (
@@ -31,7 +31,21 @@ SELECT
     CASE
         WHEN exchange_rate_to_usd is not null THEN ROUND(fs.quantity * fs.price * fs.exchange_rate_to_usd, 2)
         ELSE ROUND(fs.quantity*fs.price, 2)
-    END AS total_in_usd
+    END AS total_in_usd,
+
+    {% if is_incremental() %}
+        f.date_inserted,
+        current_timestamp as date_updated
+    {% else %}
+        current_timestamp as date_inserted,
+        current_timestamp as date_updated
+    {% endif %}
+
 FROM fact_source fs
 LEFT JOIN stg_location_source sls
     ON fs.ip_address = sls.ip_address
+
+{% if is_incremental() %}
+LEFT JOIN {{ this }} f
+    on fs.sale_id = f.sale_id
+{% endif %}
