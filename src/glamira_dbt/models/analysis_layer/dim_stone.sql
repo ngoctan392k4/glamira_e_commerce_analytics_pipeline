@@ -11,10 +11,8 @@ WITH stone_source AS (
 
 SELECT
     ss.stone_id,
-    ss.option_id AS stone_type_id,
-    ss.option_type_id AS stone_name_id,
     ss.sku,
-    ss.default_title AS title,
+    ss.stone_name,
     ss.configure_quality,
     ss.stone_group
 FROM stone_source ss
