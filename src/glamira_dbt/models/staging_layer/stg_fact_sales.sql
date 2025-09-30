@@ -12,7 +12,8 @@ product_source AS (
 
 fact_sales as (
     SELECT DISTINCT
-        FARM_FINGERPRINT(fsc.order_id || '-' || cp.product_id) AS sale_id,
+        -- avoid case same ip, order id, product id
+        FARM_FINGERPRINT(fsc.order_id || '-' || cp.product_id || '-' || fsc.ip) AS sale_id,
         CAST(CAST(CAST(fsc.order_id AS FLOAT64) AS INT64) AS STRING) AS order_id,
         cp.product_id,
         FORMAT_DATE('%Y%m%d', DATE(TIMESTAMP_SECONDS(fsc.time_stamp))) AS date_id,
@@ -22,9 +23,9 @@ fact_sales as (
         COALESCE(
             MAX(
                 CASE
-                    WHEN FARM_FINGERPRINT(opt.option_id || '-' || opt.value_id)
+                    WHEN FARM_FINGERPRINT(opt.value_label)
                         IN (SELECT stone_id FROM {{ ref("stg_dim_stone") }})
-                    THEN FARM_FINGERPRINT(opt.option_id || '-' || opt.value_id)
+                    THEN FARM_FINGERPRINT(opt.value_label)
                 END
             ),
             -1
@@ -61,10 +62,14 @@ fact_sales as (
         fsc.device_id as customer_id,
         fsc.ip AS ip_address,
         fsc.local_time,
-        MAX(cp.amount) AS quantity,
+
+        -- SUM since some order id + products contains different style but the system does not track
+        SUM(cp.amount) AS quantity,
 		-- MAX(CAST(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '\\', ''), '"', ''), "'", ''), ',', '.') AS FLOAT64)) AS price,
         -- MAX(SAFE_CAST(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '.', ''), ',', '.'), '\\', ''), '"', ''), "'", '') AS FLOAT64)) AS price,
-        MAX (
+
+        -- AVG since some order id + products contains different style but the system does not track
+        AVG (
             CASE
                 WHEN cp.price LIKE '%.%,%' THEN SAFE_CAST(
                     REPLACE(
@@ -135,7 +140,7 @@ fact_sales as (
     FROM fact_sale_source AS fsc
 	CROSS JOIN UNNEST(fsc.cart_products) AS cp
     CROSS JOIN UNNEST(cp.option) AS opt
-    JOIN product_source AS ps
+    LEFT JOIN product_source AS ps -- left join in case
 		ON ps.product_id = CAST(cp.product_id AS STRING)
 	LEFT JOIN UNNEST(ps.stone) pst
 		ON pst.option_id = CAST(opt.option_id AS STRING)
@@ -148,9 +153,10 @@ fact_sales as (
 		AND psa.option_type_id = CAST(opt.value_id AS STRING)
     LEFT JOIN {{ ref('exchange_rate') }} exc
 		ON cp.currency = exc.symbol
-	GROUP BY fsc.order_id, cp.product_id, date_id, fsc.store_id, fsc.device_id, fsc.local_time, cp.currency, fsc.ip
+	GROUP BY fsc.order_id, cp.product_id, date_id, fsc.store_id, fsc.device_id, fsc.local_time, cp.currency, fsc.ip, fsc.time_stamp
 )
 
-
+-- Some data with duplicate order id, product id, and ip address => select only 1 row
 SELECT *
 FROM fact_sales
+QUALIFY ROW_NUMBER() OVER (PARTITION BY sale_id ORDER BY sale_id) = 1
