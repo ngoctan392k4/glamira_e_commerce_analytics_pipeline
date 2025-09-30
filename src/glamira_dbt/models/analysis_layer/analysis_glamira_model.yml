@@ -1,0 +1,366 @@
+version: 1
+
+models:
+  - name: dim_color
+    description: Dimension table for color styles
+    columns:
+      - name: color_id
+        description: Primary key
+        tests:
+          - not_null
+          - unique
+
+      - name: color_code
+        description: Code of color
+        tests:
+          - not_null
+          - unique
+
+      - name: color_name
+        description: Name of Color
+        tests:
+          - not_null
+
+  - name: dim_customer
+    description: Dimension table for customer information
+    columns:
+      - name: customer_id
+        description: Primary Key
+        tests:
+          - not_null
+          - unique
+
+      - name: email_address
+        description: Email of customer
+        tests:
+          - not_null
+
+      - name: user_agent
+        description: "Browser or device user agent string"
+        tests:
+          - not_null
+
+      - name: user_id_db
+        description: "User ID from database"
+        tests:
+          - not_null
+
+      - name: resolution
+        description: "Screen resolution"
+        tests:
+          - not_null
+
+      - name: utm_source
+        description: "UTM source"
+        tests:
+          - not_null
+
+      - name: utm_medium
+        description: "UTM medium"
+        tests:
+          - not_null
+
+  - name: dim_date
+    description: Dimension table for date information
+    columns:
+      - name: date_id
+        description: YYYYMMDD format date - Primary Key
+        tests:
+          - not_null
+          - unique
+
+      - name: full_date
+        description: Actual date
+        tests:
+          - not_null
+
+      - name: date_of_week
+        description: "Day of week number"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+      - name: date_of_week_short
+        description: "Abbreviation for day of week (Mon, Tue, ...)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+      - name: is_weekday_or_weekend
+        description: "Whether the date is Weekday or Weekend"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['weekday', 'weekend']
+
+      - name: day_of_month
+        description: "Day in month"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 31
+
+      - name: day_of_year
+        description: "Day in year"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 366
+
+      - name: week_of_year
+        description: "Week in year"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 53
+
+      - name: quarter_number
+        description: "Quarter number"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 4
+
+      - name: year_number
+        description: "Calendar year"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [2020]
+
+      - name: year_month
+        description: "YYYYMM format"
+        tests:
+          - not_null
+
+  - name: dim_location
+    description: Dimension table for IP-based location info
+    columns:
+      - name: location_id
+        description: Primary Key
+        tests:
+          - not_null
+          - unique
+
+      - name: country_name
+        description: Full country name
+        tests:
+          - not_null
+
+      - name: country_short
+        description: Country Name in short form
+        tests:
+          - not_null
+
+      - name: region_name
+        description: Region of location
+        tests:
+          - not_null
+
+      - name: city_name
+        description: City of location
+        tests:
+          - not_null
+
+  - name: dim_metal
+    description: "Dimension table for types of metal"
+    columns:
+      - name: metal_id
+        description: "Primary Key"
+        tests:
+          - not_null
+          - unique
+
+      - name: metal_code
+        description: "Metal code (e.g., 375, 585, platin, silber, etc.)"
+        tests:
+          - not_null
+          - unique
+
+      - name: metal_name
+        description: "Name of the metals"
+        tests:
+          - not_null
+          - unique
+
+
+  - name: dim_product
+    description: "Dimension table for product data"
+    columns:
+      - name: product_id
+        description: "Primary Key"
+        tests:
+          - not_null
+          - unique
+
+      - name: suffix
+        description: "Web Domain that the product data comes from"
+        tests:
+          - not_null
+
+      - name: product_name
+        description: "Product name"
+        tests:
+          - not_null
+          # - unique
+
+      - name: sku
+        description: "Product SKU"
+        tests:
+          - not_null
+          # - unique
+
+      - name: attribute_set_id
+        description: "Attribute set of product id"
+        tests:
+          - not_null
+
+      - name: type_id
+        description: "Product type"
+        tests:
+          - not_null
+
+      - name: min_price
+        description: "Minimum price"
+        tests:
+          - not_null
+
+      - name: max_price
+        description: "Maximum price"
+        tests:
+          - not_null
+
+  - name: dim_stone
+    description: "Dimension table for stones"
+    columns:
+      - name: stone_id
+        description: "Primary Key"
+        tests:
+          - not_null
+          - unique
+
+      - name: sku
+        description: "Stock Keeping Unit"
+        tests:
+          - not_null
+          - unique
+
+      - name: stone_name
+        description: "Name of Stone"
+        tests:
+          - not_null
+          - unique
+
+      - name: configure_quality
+        description: "Quality of Stone"
+        tests:
+          - not_null
+
+      - name: stone_group
+        description: "Stone Category"
+        tests:
+          - not_null
+
+
+  - name: dim_store
+    description: "Dimension table for stores"
+    columns:
+      - name: store_id
+        description: "Primary Key"
+        tests:
+          - not_null
+          - unique
+
+      - name: store_name
+        description: "Store name"
+        tests:
+          - not_null
+
+  - name: fact_sales
+    description: "Fact table containing sales transactions"
+    columns:
+      - name: sale_id
+        description: "Primary key"
+        tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        description: "Order identifier"
+        tests:
+          - not_null
+
+      - name: product_id
+        description: "FK to dim_product"
+        tests:
+          - not_null
+
+      - name: date_id
+        description: "FK to dim_date"
+        tests:
+          - not_null
+
+      - name: store_id
+        description: "FK to dim_store"
+        tests:
+          - not_null
+
+      - name: stone_id
+        description: "FK to dim_stone"
+        tests:
+          - not_null
+
+      - name: color_id
+        description: "FK to dim_color"
+        tests:
+          - not_null
+
+      - name: metal_id
+        description: "FK to dim_metal"
+        tests:
+          - not_null
+
+      - name: customer_id
+        description: "Customer identifier"
+        tests:
+          - not_null
+
+      - name: location_id
+        description: "Fk to dim_location"
+        tests:
+          - not_null
+
+      - name: ip_address
+        description: "IP address"
+        tests:
+          - not_null
+
+      - name: local_time
+        description: "When the customer checkout in their region time"
+        tests:
+          - not_null
+
+      - name: price
+        description: "total price per sale_id"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+      - name: quantity
+        description: "Quantity sold"
+        tests:
+          - not_null
+
+      - name: total_in_usd
+        description: "total price per sale_id in USD"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
