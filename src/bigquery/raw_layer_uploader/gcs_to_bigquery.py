@@ -8,9 +8,9 @@ from src.bigquery.raw_layer_uploader.yaml_config import load_config
 
 config = load_config()
 
-#  Config 
+#  Config
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = config["CREDENTIALS"]
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = config["CREDENTIAL"]
 
 #  Step 1: Normalize repeated field
 def normalize_repeated_field(row):
@@ -61,9 +61,33 @@ def upload_gcs(project_id, gcs_bucket, gcs_object, local_fixed_file):
     logging.info(f"Uploaded to {GCS_URI}")
 
 #  Step 3: Load schema
+# def build_schema(schema_file):
+#     with open(schema_file, "r", encoding="utf-8") as f:
+#         fields = json.load(f)
+
+#     schema = []
+#     for field in fields:
+#         schema.append(
+#             bigquery.SchemaField(
+#                 name=field["name"],
+#                 field_type=field["type"],
+#                 mode=field.get("mode", "NULLABLE"),
+#                 description=field.get("description"),
+#                 fields=build_schema(field.get("fields", []))
+#             )
+#         )
+#     return schema
+
 def build_schema(schema_file):
-    with open(schema_file, "r", encoding="utf-8") as f:
-        fields = json.load(f)
+    # Nếu là string (đường dẫn file) thì load file JSON
+    if isinstance(schema_file, str):
+        with open(schema_file, "r", encoding="utf-8") as f:
+            fields = json.load(f)
+    # Nếu là list (nested fields) thì xử lý trực tiếp
+    elif isinstance(schema_file, list):
+        fields = schema_file
+    else:
+        raise TypeError("schema_file must be a filepath (str) or list of fields")
 
     schema = []
     for field in fields:
@@ -73,11 +97,10 @@ def build_schema(schema_file):
                 field_type=field["type"],
                 mode=field.get("mode", "NULLABLE"),
                 description=field.get("description"),
-                fields=build_schema(field.get("fields", []))
+                fields=build_schema(field["fields"]) if "fields" in field else ()
             )
         )
     return schema
-
 
 #  Step 4: Create dataset & table if not exist
 def create_dataset_table(schema, project_id, dataset_id, table_id):
