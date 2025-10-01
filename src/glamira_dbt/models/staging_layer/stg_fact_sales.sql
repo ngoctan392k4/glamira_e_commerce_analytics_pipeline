@@ -1,23 +1,29 @@
-{{ config(
-    schema='glamira_staging'
-) }}
-
 WITH fact_sale_source AS (
     SELECT *
-    FROM {{ source('glamira_src', 'raw_glamira_behaviour') }}
+    FROM `glamira-project-464503.raw_glamira.raw_glamira_behaviour`
     WHERE collection = 'checkout_success'
 ),
 
-fact_sales as (
+
+base_sales AS (
+    SELECT
+        CAST(CAST(CAST(fsc.order_id AS FLOAT64) AS INT64) AS STRING) AS order_id,
+        cp.product_id,
+        fsc.ip AS ip_address,
+        SUM(cp.amount) AS quantity
+    FROM fact_sale_source fsc
+    CROSS JOIN UNNEST(fsc.cart_products) cp
+    GROUP BY fsc.order_id, cp.product_id, fsc.ip
+),
+
+
+fact_options AS (
     SELECT DISTINCT
-        -- avoid case same ip, order id, product id
-        FARM_FINGERPRINT(fsc.order_id || '-' || cp.product_id || '-' || fsc.ip) AS sale_id,
         CAST(CAST(CAST(fsc.order_id AS FLOAT64) AS INT64) AS STRING) AS order_id,
         cp.product_id,
         FORMAT_DATE('%Y%m%d', DATE(TIMESTAMP_SECONDS(fsc.time_stamp))) AS date_id,
         fsc.store_id,
-
-		-- Though alloy or stone, both contain option_id and option_type_id => hashing first, then check if hash belongs to alloy or stone later
+        -- Though alloy or stone, both contain option_id and option_type_id => hashing first, then check if hash belongs to alloy or stone later
         COALESCE(
             MAX(
                 CASE
@@ -57,14 +63,16 @@ fact_sales as (
             -1
         ) AS metal_id,
 
+
         fsc.device_id as customer_id,
         fsc.ip AS ip_address,
         fsc.local_time,
 
         -- SUM since some order id + products contains different style but the system does not track
-        SUM(cp.amount) AS quantity,
+        -- SUM(cp.amount) AS quantity,
 		-- MAX(CAST(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '\\', ''), '"', ''), "'", ''), ',', '.') AS FLOAT64)) AS price,
         -- MAX(SAFE_CAST(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '.', ''), ',', '.'), '\\', ''), '"', ''), "'", '') AS FLOAT64)) AS price,
+
 
         -- AVG since some order id + products contains different style but the system does not track
         AVG (
@@ -130,32 +138,59 @@ fact_sales as (
                 )
             END
         ) AS price,
-        -- MAX(cp.price) as chuaxuly,
+
         COALESCE(NULLIF(cp.currency, ''), '$') AS currency,
-        COALESCE(ANY_VALUE(CAST(exc.exchange_rate AS FLOAT64)), 1) AS exchange_rate_to_usd,
-		-- MAX(cp.amount*CAST(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '\\', ''), '"', ''), "'", ''), ',', '.') AS FLOAT64)*CAST(exc.exchange_rate AS FLOAT64)) AS total_in_usd
+        COALESCE(ANY_VALUE(CAST(exc.exchange_rate AS FLOAT64)), 1) AS exchange_rate_to_usd
+
+        -- MAX(cp.amount*CAST(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '\\', ''), '"', ''), "'", ''), ',', '.') AS FLOAT64)*CAST(exc.exchange_rate AS FLOAT64)) AS total_in_usd
         -- MAX(cp.amount * SAFE_CAST(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '.', ''), ',', '.'), '\\', ''), '"', ''), "'", '') AS FLOAT64) * ANY_VALUE(CAST(exc.exchange_rate AS FLOAT64))) AS total_in_usd
-    FROM fact_sale_source AS fsc
-	CROSS JOIN UNNEST(fsc.cart_products) AS cp
-    CROSS JOIN UNNEST(cp.option) AS opt
-    LEFT JOIN {{ ref("stg_dim_product") }} AS ps -- left join in case
-		ON ps.product_id = CAST(cp.product_id AS STRING)
-	LEFT JOIN UNNEST(ps.stone) pst
-		ON pst.option_id = CAST(opt.option_id AS STRING)
-		AND pst.option_type_id = CAST(opt.value_id AS STRING)
-	LEFT JOIN UNNEST(ps.color) psc
-		ON psc.option_id = CAST(opt.option_id AS STRING)
-		AND psc.option_type_id = CAST(opt.value_id AS STRING)
-	LEFT JOIN UNNEST(ps.alloy) psa
-		ON psa.option_id = CAST(opt.option_id AS STRING)
-		AND psa.option_type_id = CAST(opt.value_id AS STRING)
-    LEFT JOIN {{ ref('exchange_rate') }} exc
+    FROM fact_sale_source fsc
+    CROSS JOIN UNNEST(fsc.cart_products) cp
+    LEFT JOIN UNNEST(cp.option) opt
+    LEFT JOIN glamira-project-464503.glamira_staging.stg_dim_product ps
+      ON ps.product_id = CAST(cp.product_id AS STRING)
+    LEFT JOIN UNNEST(ps.color) psc
+      ON psc.option_id = CAST(opt.option_id AS STRING)
+     AND psc.option_type_id = CAST(opt.value_id AS STRING)
+    LEFT JOIN UNNEST(ps.alloy) psa
+      ON psa.option_id = CAST(opt.option_id AS STRING)
+     AND psa.option_type_id = CAST(opt.value_id AS STRING)
+    LEFT JOIN `glamira-project-464503.glamira_staging.exchange_rate` exc
 		ON cp.currency = exc.symbol
-	GROUP BY fsc.order_id, cp.product_id, date_id, fsc.store_id, fsc.device_id, fsc.local_time, cp.currency, fsc.ip, fsc.time_stamp
+    GROUP BY fsc.order_id, cp.product_id, fsc.ip, fsc.time_stamp, fsc.store_id, fsc.device_id, fsc.local_time, cp.currency
+),
+
+
+final_fact_sales AS (
+    SELECT
+        FARM_FINGERPRINT(bs.order_id || '-' || bs.product_id || '-' || bs.ip_address) AS sale_id, -- avoid case same ip, order id, product id
+        bs.order_id,
+        bs.product_id,
+        fo.date_id,
+        fo.store_id,
+        fo.stone_id,
+        fo.color_id,
+        fo.metal_id,
+        fo.customer_id,
+        fo.price,
+        fo.local_time,
+        bs.ip_address,
+        bs.quantity,
+        fo.currency,
+        fo.exchange_rate_to_usd
+    FROM base_sales bs
+    LEFT JOIN fact_options fo
+      ON bs.order_id = fo.order_id
+     AND bs.product_id = fo.product_id
+     AND bs.ip_address = fo.ip_address
+),
+
+final AS (
+    SELECT *
+    FROM final_fact_sales
+    WHERE price IS NOT NULL
+    QUALIFY ROW_NUMBER() OVER (PARTITION BY sale_id ORDER BY sale_id) = 1 -- with same all information but the time_stamp is different => get one since sys may log duplicate
 )
 
--- Some data with duplicate order id, product id, and ip address => select only 1 row
 SELECT *
-FROM fact_sales
-WHERE price IS NOT NULL
-QUALIFY ROW_NUMBER() OVER (PARTITION BY sale_id ORDER BY sale_id) = 1
+FROM final
