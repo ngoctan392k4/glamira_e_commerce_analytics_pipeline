@@ -8,12 +8,6 @@ WITH fact_sale_source AS (
     WHERE collection = 'checkout_success'
 ),
 
-product_source AS (
-    SELECT *
-    FROM {{ ref("stg_dim_product") }} as ps
-
-),
-
 fact_sales as (
     SELECT DISTINCT
         -- avoid case same ip, order id, product id
@@ -144,7 +138,7 @@ fact_sales as (
     FROM fact_sale_source AS fsc
 	CROSS JOIN UNNEST(fsc.cart_products) AS cp
     CROSS JOIN UNNEST(cp.option) AS opt
-    LEFT JOIN product_source AS ps -- left join in case
+    LEFT JOIN {{ ref("stg_dim_product") }} AS ps -- left join in case
 		ON ps.product_id = CAST(cp.product_id AS STRING)
 	LEFT JOIN UNNEST(ps.stone) pst
 		ON pst.option_id = CAST(opt.option_id AS STRING)

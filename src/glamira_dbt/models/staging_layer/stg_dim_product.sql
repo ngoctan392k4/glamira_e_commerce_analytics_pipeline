@@ -38,67 +38,72 @@ remaining_picked AS (
   JOIN random_suffix ps
     ON rpd.product_id = ps.product_id
    AND rpd.suffix = ps.picked_suffix
+),
+
+final_dim_product AS (
+  SELECT
+    data.product_id,
+    COALESCE(NULLIF(data.suffix, ''), 'Not Defined') AS suffix,
+    COALESCE(NULLIF(data.product_name, ''), 'Not Defined') AS product_name,
+    COALESCE(NULLIF(data.sku, ''), 'Not Defined') AS sku,
+    COALESCE(NULLIF(data.attribute_set_id, -1), -1) AS attribute_set_id,
+    COALESCE(NULLIF(data.type_id, ''), 'Not Defined') AS type_id,
+    COALESCE(NULLIF(data.min_price, ''), 'Not Defined') AS min_price,
+    COALESCE(NULLIF(data.max_price, ''), 'Not Defined') AS max_price,
+    COALESCE(NULLIF(data.collection_id, ''), 'Not Defined') AS collection_id,
+    COALESCE(NULLIF(data.product_type_value, ''), 'Not Defined') AS product_type_value,
+    COALESCE(NULLIF(data.category, -1), -1) AS category,
+    COALESCE(NULLIF(data.store_code, ''), '-1') AS store_code,
+    COALESCE(NULLIF(data.gender, ''), 'Not Defined') AS gender,
+    data.stone AS stone,
+    data.color AS color,
+    data.alloy AS alloy
+  FROM english_product_name
+
+  UNION ALL
+  SELECT
+    data.product_id,
+    COALESCE(NULLIF(data.suffix, ''), 'Not Defined') AS suffix,
+    COALESCE(NULLIF(data.product_name, ''), 'Not Defined') AS product_name,
+    COALESCE(NULLIF(data.sku, ''), 'Not Defined') AS sku,
+    COALESCE(NULLIF(data.attribute_set_id, -1), -1) AS attribute_set_id,
+    COALESCE(NULLIF(data.type_id, ''), 'Not Defined') AS type_id,
+    COALESCE(NULLIF(data.min_price, ''), 'Not Defined') AS min_price,
+    COALESCE(NULLIF(data.max_price, ''), 'Not Defined') AS max_price,
+    COALESCE(NULLIF(data.collection_id, ''), 'Not Defined') AS collection_id,
+    COALESCE(NULLIF(data.product_type_value, ''), 'Not Defined') AS product_type_value,
+    COALESCE(NULLIF(data.category, -1), -1) AS category,
+    COALESCE(NULLIF(data.store_code, ''), '-1') AS store_code,
+    COALESCE(NULLIF(data.gender, ''), 'Not Defined') AS gender,
+    data.stone AS stone,
+    data.color AS color,
+    data.alloy AS alloy
+  FROM other_latin_product_name
+
+  UNION ALL
+  SELECT
+    rp.product_id,
+    COALESCE(NULLIF(rp.suffix, ''), 'Not Defined') AS suffix,
+    COALESCE(NULLIF(rp.product_name, ''), 'Not Defined') AS product_name,
+    COALESCE(NULLIF(rp.sku, ''), 'Not Defined') AS sku,
+    COALESCE(NULLIF(rp.attribute_set_id, -1), -1) AS attribute_set_id,
+    COALESCE(NULLIF(rp.type_id, ''), 'Not Defined') AS type_id,
+    COALESCE(NULLIF(rp.min_price, ''), 'Not Defined') AS min_price,
+    COALESCE(NULLIF(rp.max_price, ''), 'Not Defined') AS max_price,
+    COALESCE(NULLIF(rp.collection_id, ''), 'Not Defined') AS collection_id,
+    COALESCE(NULLIF(rp.product_type_value, ''), 'Not Defined') AS product_type_value,
+    COALESCE(NULLIF(rp.category, -1), -1) AS category,
+    COALESCE(NULLIF(rp.store_code, ''), '-1') AS store_code,
+    COALESCE(NULLIF(NULLIF(rp.gender, 'false'), ''), 'Not Defined') AS gender,
+    rp.stone AS stone,
+    rp.color AS color,
+    rp.alloy AS alloy
+  FROM remaining_picked rp
 )
 
+SELECT *
+FROM final_dim_product
 
-SELECT
-  data.product_id,
-  COALESCE(NULLIF(data.suffix, ''), 'Not Defined') AS suffix,
-  COALESCE(NULLIF(data.product_name, ''), 'Not Defined') AS product_name,
-  COALESCE(NULLIF(data.sku, ''), 'Not Defined') AS sku,
-  COALESCE(NULLIF(data.attribute_set_id, -1), -1) AS attribute_set_id,
-  COALESCE(NULLIF(data.type_id, ''), 'Not Defined') AS type_id,
-  COALESCE(NULLIF(data.min_price, ''), 'Not Defined') AS min_price,
-  COALESCE(NULLIF(data.max_price, ''), 'Not Defined') AS max_price,
-  COALESCE(NULLIF(data.collection_id, ''), 'Not Defined') AS collection_id,
-  COALESCE(NULLIF(data.product_type_value, ''), 'Not Defined') AS product_type_value,
-  COALESCE(NULLIF(data.category, -1), -1) AS category,
-  COALESCE(NULLIF(data.store_code, ''), '-1') AS store_code,
-  COALESCE(NULLIF(data.gender, ''), 'Not Defined') AS gender,
-  data.stone AS stone,
-  data.color AS color,
-  data.alloy AS alloy
-FROM english_product_name
-
-UNION ALL
-SELECT
-  data.product_id,
-  COALESCE(NULLIF(data.suffix, ''), 'Not Defined') AS suffix,
-  COALESCE(NULLIF(data.product_name, ''), 'Not Defined') AS product_name,
-  COALESCE(NULLIF(data.sku, ''), 'Not Defined') AS sku,
-  COALESCE(NULLIF(data.attribute_set_id, -1), -1) AS attribute_set_id,
-  COALESCE(NULLIF(data.type_id, ''), 'Not Defined') AS type_id,
-  COALESCE(NULLIF(data.min_price, ''), 'Not Defined') AS min_price,
-  COALESCE(NULLIF(data.max_price, ''), 'Not Defined') AS max_price,
-  COALESCE(NULLIF(data.collection_id, ''), 'Not Defined') AS collection_id,
-  COALESCE(NULLIF(data.product_type_value, ''), 'Not Defined') AS product_type_value,
-  COALESCE(NULLIF(data.category, -1), -1) AS category,
-  COALESCE(NULLIF(data.store_code, ''), '-1') AS store_code,
-  COALESCE(NULLIF(data.gender, ''), 'Not Defined') AS gender,
-  data.stone AS stone,
-  data.color AS color,
-  data.alloy AS alloy
-FROM other_latin_product_name
-
-UNION ALL
-SELECT
-  rp.product_id,
-  COALESCE(NULLIF(rp.suffix, ''), 'Not Defined') AS suffix,
-  COALESCE(NULLIF(rp.product_name, ''), 'Not Defined') AS product_name,
-  COALESCE(NULLIF(rp.sku, ''), 'Not Defined') AS sku,
-  COALESCE(NULLIF(rp.attribute_set_id, -1), -1) AS attribute_set_id,
-  COALESCE(NULLIF(rp.type_id, ''), 'Not Defined') AS type_id,
-  COALESCE(NULLIF(rp.min_price, ''), 'Not Defined') AS min_price,
-  COALESCE(NULLIF(rp.max_price, ''), 'Not Defined') AS max_price,
-  COALESCE(NULLIF(rp.collection_id, ''), 'Not Defined') AS collection_id,
-  COALESCE(NULLIF(rp.product_type_value, ''), 'Not Defined') AS product_type_value,
-  COALESCE(NULLIF(rp.category, -1), -1) AS category,
-  COALESCE(NULLIF(rp.store_code, ''), '-1') AS store_code,
-  COALESCE(NULLIF(NULLIF(rp.gender, 'false'), ''), 'Not Defined') AS gender,
-  rp.stone AS stone,
-  rp.color AS color,
-  rp.alloy AS alloy
-FROM remaining_picked rp
 
 
 

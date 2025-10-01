@@ -4,15 +4,10 @@
     materialized='table'
 ) }}
 
-WITH stone_source AS (
-    SELECT *
-    FROM {{ref("stg_dim_stone")}}
-)
-
 SELECT
     ss.stone_id,
     ss.sku,
     ss.stone_name,
     ss.configure_quality,
     ss.stone_group
-FROM stone_source ss
+FROM {{ref("stg_dim_stone")}} ss

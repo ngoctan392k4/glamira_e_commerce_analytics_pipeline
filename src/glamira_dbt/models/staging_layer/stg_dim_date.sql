@@ -1,9 +1,4 @@
-WITH dim_date_source AS (
-    SELECT *
-    FROM {{source('glamira_src', 'raw_glamira_behaviour')}}
-),
-
-dim_date_info AS (
+WITH dim_date_info AS (
     SELECT DISTINCT
         FORMAT_DATE('%Y%m%d', DATE(TIMESTAMP_SECONDS(ddc.time_stamp))) AS date_id,
         DATE(TIMESTAMP_SECONDS(ddc.time_stamp)) AS full_date,
@@ -22,7 +17,7 @@ dim_date_info AS (
         EXTRACT(YEAR FROM TIMESTAMP_SECONDS(ddc.time_stamp)) AS year_number,
         FORMAT_DATE('%Y%m', DATE(TIMESTAMP_SECONDS(ddc.time_stamp))) AS year_month
 
-    FROM dim_date_source ddc
+    FROM {{source('glamira_src', 'raw_glamira_behaviour')}} ddc
 )
 
 SELECT *

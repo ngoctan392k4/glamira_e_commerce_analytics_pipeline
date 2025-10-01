@@ -4,15 +4,6 @@
     materialized='incremental'
 ) }}
 
-WITH fact_source AS (
-    SELECT *
-    FROM {{ref("stg_fact_sales")}}
-),
-stg_location_source AS (
-    SELECT *
-    FROM {{ref("stg_dim_location")}}
-)
-
 SELECT
     fs.sale_id,
     fs.order_id,
@@ -41,8 +32,8 @@ SELECT
         current_timestamp as date_updated
     {% endif %}
 
-FROM fact_source fs
-LEFT JOIN stg_location_source sls
+FROM {{ref("stg_fact_sales")}} fs
+LEFT JOIN {{ref("stg_dim_location")}} sls
     ON fs.ip_address = sls.ip_address
 
 {% if is_incremental() %}

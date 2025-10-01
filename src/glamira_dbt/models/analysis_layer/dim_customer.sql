@@ -4,10 +4,5 @@
     materialized='table'
 ) }}
 
-WITH customer_source AS (
-  SELECT *
-  FROM {{ref("stg_dim_customer")}}
-)
-
 SELECT *
-FROM customer_source
+FROM {{ref("stg_dim_customer")}}
