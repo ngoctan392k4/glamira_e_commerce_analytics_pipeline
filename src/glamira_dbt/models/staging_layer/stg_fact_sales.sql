@@ -1,3 +1,7 @@
+{{ config(
+    schema='glamira_staging'
+) }}
+
 WITH fact_sale_source AS (
     SELECT *
     FROM {{ source('glamira_src', 'raw_glamira_behaviour') }}
@@ -159,4 +163,5 @@ fact_sales as (
 -- Some data with duplicate order id, product id, and ip address => select only 1 row
 SELECT *
 FROM fact_sales
+WHERE price IS NOT NULL
 QUALIFY ROW_NUMBER() OVER (PARTITION BY sale_id ORDER BY sale_id) = 1
