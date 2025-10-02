@@ -54,7 +54,7 @@ dec_project2:
 
 ### 📝 Tasks
 #### **1. Data modeling**
-<img src="../../assets/data_modeling.png" alt="Dim - Fact Model" width="700"/>
+<img src="../../assets/data_model.png" alt="Dim - Fact Model" width="700"/>
 
 #### **2. Transform data in raw layer into staging layer**
 - Based on option.option_label = 'alloy', extract metal code and color code
