@@ -1,0 +1,196 @@
+WITH fact_sale_source AS (
+    SELECT *
+    FROM `glamira-project-464503.raw_glamira.raw_glamira_behaviour`
+    WHERE collection = 'checkout_success'
+),
+
+
+base_sales AS (
+    SELECT
+        CAST(CAST(CAST(fsc.order_id AS FLOAT64) AS INT64) AS STRING) AS order_id,
+        cp.product_id,
+        fsc.ip AS ip_address,
+        SUM(cp.amount) AS quantity
+    FROM fact_sale_source fsc
+    CROSS JOIN UNNEST(fsc.cart_products) cp
+    GROUP BY fsc.order_id, cp.product_id, fsc.ip
+),
+
+
+fact_options AS (
+    SELECT DISTINCT
+        CAST(CAST(CAST(fsc.order_id AS FLOAT64) AS INT64) AS STRING) AS order_id,
+        cp.product_id,
+        FORMAT_DATE('%Y%m%d', DATE(TIMESTAMP_SECONDS(fsc.time_stamp))) AS date_id,
+        fsc.store_id,
+        -- Though alloy or stone, both contain option_id and option_type_id => hashing first, then check if hash belongs to alloy or stone later
+        COALESCE(
+            MAX(
+                CASE
+                    WHEN FARM_FINGERPRINT(opt.value_label)
+                        IN (SELECT stone_id FROM {{ ref("stg_dim_stone") }})
+                    THEN FARM_FINGERPRINT(opt.value_label)
+                END
+            ),
+            -1
+        ) AS stone_id,
+
+        COALESCE(
+            MAX(
+                CASE
+                    WHEN psc.option_id IS NOT NULL
+                        AND FARM_FINGERPRINT(psc.colour) IN (SELECT color_id FROM {{ ref("stg_dim_color") }})
+                    THEN FARM_FINGERPRINT(psc.colour)
+                    WHEN psa.option_id IS NOT NULL
+                        AND FARM_FINGERPRINT(psa.colour) IN (SELECT color_id FROM {{ ref("stg_dim_color") }})
+                    THEN FARM_FINGERPRINT(psa.colour)
+                END
+            ),
+            -1
+        ) AS color_id,
+
+        COALESCE(
+            MAX(
+                CASE
+                    WHEN psc.option_id IS NOT NULL
+                        AND FARM_FINGERPRINT(psc.metal) IN (SELECT metal_id FROM {{ ref("stg_dim_metal") }})
+                    THEN FARM_FINGERPRINT(psc.metal)
+                    WHEN psa.option_id IS NOT NULL
+                        AND FARM_FINGERPRINT(psa.metal) IN (SELECT metal_id FROM {{ ref("stg_dim_metal") }})
+                    THEN FARM_FINGERPRINT(psa.metal)
+                END
+            ),
+            -1
+        ) AS metal_id,
+
+
+        fsc.device_id as customer_id,
+        fsc.ip AS ip_address,
+        fsc.local_time,
+
+        -- SUM since some order id + products contains different style but the system does not track
+        -- SUM(cp.amount) AS quantity,
+		-- MAX(CAST(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '\\', ''), '"', ''), "'", ''), ',', '.') AS FLOAT64)) AS price,
+        -- MAX(SAFE_CAST(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '.', ''), ',', '.'), '\\', ''), '"', ''), "'", '') AS FLOAT64)) AS price,
+
+
+        -- AVG since some order id + products contains different style but the system does not track
+        AVG (
+            CASE
+                WHEN cp.price LIKE '%.%,%' THEN SAFE_CAST(
+                    REPLACE(
+                        REPLACE(
+                        REPLACE(
+                            REPLACE(
+                            REPLACE(cp.price, '\\', ''),
+                            '"', ''
+                            ),
+                            "'", ''
+                        ),
+                        '.', ''  -- remove . for thousand part
+                        ),
+                        ',', '.'  -- replace , to .
+                    ) AS FLOAT64
+                )
+
+                WHEN cp.price LIKE '%,%.%' THEN SAFE_CAST(
+                    REPLACE(
+                    REPLACE(
+                        REPLACE(
+                        REPLACE(cp.price, '\\', ''),
+                        '"', ''
+                        ),
+                        "'", ''
+                    ),
+                    ',', ''      -- remove , for thousand part
+                    ) AS FLOAT64
+                )
+
+                WHEN cp.price LIKE '%٫%' AND NOT cp.price LIKE '%.%' THEN SAFE_CAST(
+                REPLACE(
+                    REPLACE(
+                    REPLACE(cp.price, '\\', ''),
+                    '"', ''
+                    ),
+                    '٫', '.'   -- đổi dấu phẩy thành dấu chấm
+                ) AS FLOAT64
+                )
+
+                WHEN cp.price LIKE '%,%' OR cp.price LIKE '%.%' OR cp.price LIKE "%\'%.%" THEN
+                    SAFE_CAST(
+                    REGEXP_REPLACE(
+                    REGEXP_REPLACE(
+                        REPLACE(cp.price, "'", ''),
+                        r'([,\.])(\d{1,2})$', r'.\2'        -- decimal part
+                    ),
+                    r'([,\.])(\d{3})([^0-9]|$)', r'\2\3'             -- thousand part
+                    ) AS FLOAT64
+                )
+
+                ELSE SAFE_CAST(
+                    REPLACE(
+                    REPLACE(
+                        REPLACE(cp.price, '\\', ''),
+                        '"', ''
+                    ),
+                    "'", ''
+                    ) AS FLOAT64
+                )
+            END
+        ) AS price,
+
+        COALESCE(NULLIF(cp.currency, ''), '$') AS currency,
+        COALESCE(ANY_VALUE(CAST(exc.exchange_rate AS FLOAT64)), 1) AS exchange_rate_to_usd
+
+        -- MAX(cp.amount*CAST(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '\\', ''), '"', ''), "'", ''), ',', '.') AS FLOAT64)*CAST(exc.exchange_rate AS FLOAT64)) AS total_in_usd
+        -- MAX(cp.amount * SAFE_CAST(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(cp.price, '.', ''), ',', '.'), '\\', ''), '"', ''), "'", '') AS FLOAT64) * ANY_VALUE(CAST(exc.exchange_rate AS FLOAT64))) AS total_in_usd
+    FROM fact_sale_source fsc
+    CROSS JOIN UNNEST(fsc.cart_products) cp
+    LEFT JOIN UNNEST(cp.option) opt
+    LEFT JOIN glamira-project-464503.glamira_staging.stg_dim_product ps
+      ON ps.product_id = CAST(cp.product_id AS STRING)
+    LEFT JOIN UNNEST(ps.color) psc
+      ON psc.option_id = CAST(opt.option_id AS STRING)
+     AND psc.option_type_id = CAST(opt.value_id AS STRING)
+    LEFT JOIN UNNEST(ps.alloy) psa
+      ON psa.option_id = CAST(opt.option_id AS STRING)
+     AND psa.option_type_id = CAST(opt.value_id AS STRING)
+    LEFT JOIN `glamira-project-464503.glamira_staging.exchange_rate` exc
+		ON cp.currency = exc.symbol
+    GROUP BY fsc.order_id, cp.product_id, fsc.ip, fsc.time_stamp, fsc.store_id, fsc.device_id, fsc.local_time, cp.currency
+),
+
+
+final_fact_sales AS (
+    SELECT
+        FARM_FINGERPRINT(bs.order_id || '-' || bs.product_id || '-' || bs.ip_address) AS sale_id, -- avoid case same ip, order id, product id
+        bs.order_id,
+        bs.product_id,
+        fo.date_id,
+        fo.store_id,
+        fo.stone_id,
+        fo.color_id,
+        fo.metal_id,
+        fo.customer_id,
+        fo.price,
+        fo.local_time,
+        bs.ip_address,
+        bs.quantity,
+        fo.currency,
+        fo.exchange_rate_to_usd
+    FROM base_sales bs
+    LEFT JOIN fact_options fo
+      ON bs.order_id = fo.order_id
+     AND bs.product_id = fo.product_id
+     AND bs.ip_address = fo.ip_address
+),
+
+final AS (
+    SELECT *
+    FROM final_fact_sales
+    WHERE price IS NOT NULL
+    QUALIFY ROW_NUMBER() OVER (PARTITION BY sale_id ORDER BY sale_id) = 1 -- with same all information but the time_stamp is different => get one since sys may log duplicate
+)
+
+SELECT *
+FROM final
